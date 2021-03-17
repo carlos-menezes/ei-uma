@@ -2,6 +2,8 @@
   - [1.1. Conceitos e operações básicas entre conjuntos](#11-conceitos-e-operações-básicas-entre-conjuntos)
   - [1.2. Conjunto das partes de um conjunto](#12-conjunto-das-partes-de-um-conjunto)
   - [1.3. Uniões e inteseções generalizadas de conjuntos](#13-uniões-e-inteseções-generalizadas-de-conjuntos)
+  - [1.4 Multiconjuntos](#14-multiconjuntos)
+  - [1.5. Produto cartesiano](#15-produto-cartesiano)
 
 # 1. Conjuntos
 ## 1.1. Conceitos e operações básicas entre conjuntos
@@ -71,4 +73,62 @@ $A_1 \cap A_2 \cap A_3 \cap ... \cap A_n$ escreve-se
 
 $$
 \bigcap_{1 \leq i \leq n}A_i
+$$
+
+1. $A_i={0,1,2,...,i}, i \geq 1$
+
+$$
+A_1={0, 1} \quad A_2={0, 1, 2} \quad ... \\
+\ \\
+\begin{aligned}
+    \bigcap A_i=&A_1\cap A_2 \cap ... \\
+    =&\{0, 1\} \cap \{0, 1, 2\} \\
+    =&\{0, 1\}
+\end{aligned} \qquad
+
+\begin{aligned}
+    \bigcup A_i=&A_1\cup A_2 \cap ... \\
+    =&\{0, 1\} \cup \{0, 1, 2\} \\
+    =&\N_0=\Z^+_0
+\end{aligned}
+$$
+
+## 1.4 Multiconjuntos
+Coleção de objectos que pode ter um número finito de ocorrências repetidas de certos objectos.
+
+$$
+\{3, 4, 4, 2, 2, 1, 6, 5, 2, 1\} \\
+\{2\bullet 1, 3\bullet 2, 1 \bullet 3, 2\bullet 4, 1 \bullet 5, 1 \bullet 6 \} \\
+\ \\
+\{\text{nº de ocorrências} \bullet \text{valores possíveis}\}
+$$
+
+$Propriedades.$
+- **Igualdade:** $A=B⇔\forall_xno(x, A)=no(x,B)$
+- **Cardinalidade:** $\#\{2\bullet 1, 3\bullet 2, 1 \bullet 3, 2\bullet 4, 1 \bullet 5, 1 \bullet 6 \}=10$
+- **Submulticonjunto:** $A \subseteq B ⇔ \forall_x no(x,A)\leq no(x,B)$
+- **Interseção:** $A \cap B$ é o **maior multiconjunto (em termos de elementos) que está contido, simultaneamente, nos multiconjuntos $A$ e $B$.
+- **Reunião:** $A \cup B$ é o **menor multiconjunto que contem, simultaneamente, os multiconjuntos $A$ e $B$.
+
+$Exercício.$
+Sejam $A=\{1\bullet a, 2\bullet b,2 \bullet c\}$, $B=\{2\bullet a, 2\bullet b,1 \bullet c\}$,  $C=\{3\bullet x, 2\bullet y,1 \bullet z\}$ e $D=\{2\bullet x, 2\bullet y,3 \bullet z\}$
+
+## 1.5. Produto cartesiano
+$$
+A\times B=\{(x, y):x\in A \wedge y \in B\}
+$$
+
+Se $A=B, A\times B=A\times A=A^2$. $\#(A\times B)=\#A\times \#B$.
+
+1. $A=\{1,3,5\}$, $B=\{2, 4\}$, $C=\{x, y\}$ e $D=\{z\}$
+
+$$
+\begin{aligned}
+    A\times B &=\{1,3,5\}\times\{2, 4\} \\
+    &=\{(1, 2), (1,4), (3, 2), (3,4), (5,2), (5,4)\} \\
+    \ \\
+    A^2&=A\times A \\
+    &=\{1,3,5\}\times\{1,3,5\} \\
+    &=\{(1,1), (1,3), (1,5), (3,1), (3,3), (3,5), (5,1), (5,3), (5,5)\}
+\end{aligned}
 $$
