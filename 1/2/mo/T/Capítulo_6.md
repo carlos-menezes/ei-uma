@@ -15,6 +15,9 @@
 - [7. Colisões a uma dimensão](#7-colisões-a-uma-dimensão)
   - [7.1. Colisão completamente inelástica](#71-colisão-completamente-inelástica)
   - [7.2. Velocidade do centro de massa](#72-velocidade-do-centro-de-massa)
+  - [7.3. Colisões elásticas](#73-colisões-elásticas)
+    - [Casos Particulares](#casos-particulares)
+- [8. Colisões bidimensionais](#8-colisões-bidimensionais)
 
 # 1. Centro de Massa
 O centro de massa $CM$ de um sistema de partículas é o ponto que se move como se $1.$ toda a $m$ do sistema estivesse concentrada nele e $2.$ todas as forças exteriores estivessem aplicadas nele.
@@ -259,3 +262,107 @@ $$
 \vec{p}=Mv_{CM}=(m_1+m_2)\vec{v}_{CM}
 $$
 
+Visto que $\vec{p}$ se conserva durante a colisão,
+
+$$
+\vec{p}=\vec{p}_{1i}+\vec{p}_{2i}
+$$
+
+logo,
+
+$$
+\vec{v}_{CM}=\frac{\vec{p}}{m_1+m_2}=\frac{\vec{p}_{1i}+\vec{p}_{2i}}{m_1+m_2}
+$$
+
+
+## 7.3. Colisões elásticas
+
+<div align="center">
+    <img src="https://i.imgur.com/MUNprY6.png" height="150px">
+</div>
+
+Considerando os dois corpos com massas $m_1$ e $m_2$ que se movem com velocidades $\vec{v}_{1i}$ $\vec{v}_{2i}$ ao longo dos eixos dos $x$'s.
+
+Ao sofrerem uma colisão, emergem com diferentes velocidades  $\vec{v}_{1f}$ $\vec{v}_{2f}$. Nesta colisão, há conservação de $\vec{p}$ e $K$. A lei da conversação do momento pode então ser enunciada como
+
+$$
+m_1\vec{v}_{1i}+m_2\vec{v}_{2i}=m_1\vec{v}_{1f}+m_2\vec{v}_{2f}=
+$$
+
+Sendo o movimento unidimensional, podemos escrever:
+
+$$
+m_1{v}_{1i}+m_2{v}_{2i}=m_1{v}_{1f}+m_2{v}_{2f}=
+$$
+
+A velocidade relativa dos dois corpos antes da colisão é igual ao simétrica da velocidade relativa dos corpos após colisão.
+
+$$
+v_{1i}-v_{2i}=-(v_{1f}-v_{2f})
+$$
+
+$$
+
+v_{1f}=(\frac{m_1-m_2}{m_1+m_2})+v_{1i}+(\frac{2m_2}{m_1+m_2})v_{2i} \\
+
+\ \\
+
+v_{2f}=(\frac{2m_1}{m_1+m_2})+v_{1i}+(\frac{m_1-m_2}{m_1+m_2})v_{2i}
+$$
+
+### Casos Particulares
+- Massas iguais: $v_{1f}=v_{2i}$ e $v_{2f}=v_{1i}$.
+  - Os corpos trocam de velocidades quando têm a mesma massa.
+
+
+- Alvo massivo: $m_2 \gt \gt m_1$ e $v_{2i}=0$. $v_{1f}\approx-v_{1i}$ e $v_{2f}\approx 0$.
+
+- Projétil massivo: $m_1 \gt \gt m_2$ e $v_{2i}=0$. $v_{1f}\approx v_{1i}$ e $v_{2f}\approx 2v_{1i}$.
+
+# 8. Colisões bidimensionais
+
+<div align="center">
+    <img src="https://i.imgur.com/RSxwmF2.png" height="150px">
+</div>
+
+Se a colisão entre dois objetos não for frontal, os corpos emergem da clisão com direções diferentes das iniciais dos seus movimentos.
+
+Quando tal colisão ocorre num sistema fechado e isolado, há conservação de $\vec{p}$:
+
+$$
+m_1\vec{v}_{1i}+m_2\vec{v}_{2i}=m_1\vec{v}_{1f}+m_2\vec{v}_{2f}
+$$
+
+Se a colisão for elástica, $K$ também se conserva:
+
+$$
+\frac{1}{2}m_1v^{2}_{1i}p\frac{1}{2}m_2v^{2}_{2i}=\frac{1}{2}m_1v^{2}_{1f}p\frac{1}{2}m_2v^{2}_{2f} \\
+\ \\
+i \mapsto \text{instante antes da colisão} \qquad f \mapsto \text{instante após colisão}
+$$
+
+Na figura acima, $m_2$ está inicialmente em repouso. Considere-se que ambas as particulas colidem.
+
+Após a colisão, o corpo de massa $m_1$ move-se segunda uma direção de ângulo $\theta_1$ com o eixo dos $x$'s, situação análoga ao corpo de massa $m_2$ (em que o ângulo é $\theta_2$).
+
+Segundo o eixo dos $x$'s:
+
+$$
+m_1v_{1i}=m_1v_{1fx}+m_2v_{2fx} \\
+m_1v_{1i}=m_1v_{1f}cos(\theta_1)+m_2v_{2f}cos(\theta_2)
+$$
+
+Segundo o eixo dos $y$'s:
+
+$$
+0=m_1v_{1fy}+m_2v_{2fy} \\
+0=m_1v_{1f}sin(\theta_1)+m_2v_{2f}sin(\theta_2)
+$$
+
+Neste caso, $\theta_1 > 0$ e $\theta_2 < 0$. Neste caso,
+
+$$
+\frac{1}{2}m_1v^{2}_{1i}=\frac{1}{2}m_1v^{2}_{1f}+\frac{1}{2}m_2v^{2}_{2f}
+$$
+
+As equações acima contêm 7 variáveis. . Se conhecermos quatro destas variáveis, podemos resolver as três equações para as restantes três variáveis.
