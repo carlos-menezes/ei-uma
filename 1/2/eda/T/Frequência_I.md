@@ -434,7 +434,7 @@ $$
 
 ```cpp
 int *p = new int;
-int *q = new int(1); // inicializar com o valor 4
+int *q = new int(4); // inicializar com o valor 4
 ```
 
 - alocação de vários elementos (_array_):
@@ -445,6 +445,16 @@ $$
 
 ```cpp
 int *v = new int[5];
+```
+
+$$
+v=\begin{bmatrix}
+  \texttt{0} & \texttt{0} & \texttt{0} & \texttt{0} & \texttt{0}
+\end{bmatrix}
+$$
+
+```cpp
+int **v = new int*[5];
 ```
 
 $$
