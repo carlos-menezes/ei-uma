@@ -1,0 +1,22 @@
+\babel@toc {portuguese}{}
+\contentsline {section}{Análise de Algoritmos}{3}{section*.2}%
+\contentsline {paragraph}{Exemplos}{3}{section*.3}%
+\contentsline {subsection}{Crescimento}{3}{section*.4}%
+\contentsline {subsubsection}{Notação Assimptótica}{4}{section*.5}%
+\contentsline {paragraph}{Exemplo}{4}{section*.6}%
+\contentsline {section}{Algoritmos de Ordenação}{5}{section*.7}%
+\contentsline {subsection}{Insertion Sort}{5}{section*.8}%
+\contentsline {subsection}{Selection Sort}{6}{section*.9}%
+\contentsline {subsection}{Bubble Sort}{7}{section*.10}%
+\contentsline {subsection}{Shell Sort}{8}{section*.11}%
+\contentsline {subsection}{Merge Sort}{9}{section*.12}%
+\contentsline {subsection}{Quick Sort}{10}{section*.13}%
+\contentsline {subsection}{Sumário}{11}{section*.14}%
+\contentsline {section}{Recursividade}{11}{section*.15}%
+\contentsline {section}{Árvores}{12}{section*.16}%
+\contentsline {subsubsection}{Árvores Binárias}{13}{section*.17}%
+\contentsline {paragraph}{Travessia Prefixa, \textbf {RLR}}{14}{section*.18}%
+\contentsline {paragraph}{Travessia Infixa, \textbf {LRR}}{14}{section*.19}%
+\contentsline {paragraph}{Travessia Sufixa, \textbf {LRR}}{15}{section*.20}%
+\contentsline {paragraph}{Travessia em Largura}{15}{section*.21}%
+\contentsline {subsubsection}{Árvores de Pesquisa Binária}{15}{section*.22}%

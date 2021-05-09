@@ -1,0 +1,547 @@
+\documentclass[a4paper, 12pt]{article}
+\setcounter{secnumdepth}{0}
+\usepackage{amsmath}
+\usepackage{listings}
+\usepackage{pgfplots}
+\usepackage{bookmark}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[portuguese]{babel}
+\usepackage{booktabs}
+
+\usepackage[margin=1in]{geometry}
+
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks,
+    citecolor=black,
+    filecolor=black,
+    linkcolor=black,
+    urlcolor=black
+}
+
+\pgfplotsset{compat=1.17}
+
+\newtheorem{definition}{Definição}[section]
+\newtheorem{remark}{Observação}
+
+\renewcommand{\lstlistingname}{Algoritmo}% Listing -> Algoritmo
+
+\title{Estruturas de Dados e Algoritmos\\ \Large{Frequência II}}
+\author{Carlos Menezes}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+\newpage
+
+\tableofcontents
+
+\newpage
+
+\section{Análise de Algoritmos}
+
+\begin{definition}[Algoritmo]
+    Sequência finita de ações executáveis que visam obter uma solução para um determinado tipo de problema.
+\end{definition}
+
+\begin{remark}
+    Dois algoritmos que resolvem o mesmo problema podem ter eficiências diferentes. Um algoritmo rápido permite resolver um problema numa máquina lenta.
+\end{remark}
+
+Existem formas de avaliar as exigências de um algoritmo:
+\begin{itemize}
+    \item Empiricamente: observando a execução do programa;
+    \item Experimentalmente: modelo simplificado do problema, estimando o comportamento futuro;
+    \item Analiticamente: demonstrando a existência de uma função matemática que calcule as exigências do programa em relação aos parâmetros do problema.
+\end{itemize}
+
+\paragraph{Exemplos} 
+
+\begin{center}
+    \begin{lstlisting}[frame=single, language=c, caption=Algoritmo I, captionpos=b]
+        int soma = 0;
+        for ( int i = 1 ; i <= n ; i++ )
+            soma = soma + i;
+    \end{lstlisting}
+    
+    \begin{lstlisting}[frame=single, language=c, caption=Algoritmo II, captionpos=b]
+        int soma = 0;
+        for ( int i = 1 ; i <= n ; i++ )
+            for (int j = 1 ; j <= i ; j++ )
+                soma = soma + 1;
+    \end{lstlisting}
+    
+    \begin{lstlisting}[frame=single, language=c, caption=Algoritmo III, captionpos=b]
+        int soma = n * ( n + 1 ) / 2;
+    \end{lstlisting}
+    
+    \begin{table}[h]
+        \centering
+        \begin{tabular}{|l|l|l|l|}
+        \hline
+                    & Algoritmo I & Algoritmo II       & Algoritmo III \\
+        \hline
+        Atribuições    & n+2         & $3+n\frac{n}{2}$   & 1             \\
+        \hline
+        Adições        & 2n          & $n(\frac{2n}{2})$  & 1             \\
+        \hline
+        Multiplicações &             &                    & 1             \\
+        \hline
+        Divisões       &             &                    & 1             \\
+        \hline
+        Operações      & 3n+2        & $\frac{3n^2}{2}+3$ & 4            \\
+        \hline
+        \end{tabular}
+    \end{table}
+\end{center}
+
+\subsection{Crescimento}
+
+\begin{remark}
+    O tempo de execução geralmente dependente de um único parâmetro $N$: medida abstrata do tamanho do problema a considerar, usualmente relacionada com a quantidade de dados a processar.
+\end{remark}
+
+\subsubsection{Notação Assimptótica}
+
+\begin{remark}
+    A análise do tempo de execução de um algoritmo só é útil para valores de $N$ elevados. É utilizado o \textbf{pior-case} como valor para complexidade, pois:\end{remark}
+
+    \begin{itemize}
+        \item representa um limite superior no tempo de execução;
+        \item o valor médio é muitas vezes próximo do pior-caso.
+    \end{itemize}
+
+\begin{definition}[Notação Assimptótica]
+    A notação assimptótica permite estabelecer taxas de crescimento dos tempos de execução dos algoritmos em função dos tamanhos das entradas. A complexidade assimptótica é expressa através da ordem de magnitude usando a notação \emph{big O}, $\mathbf{O}$.
+\end{definition}
+
+\begin{definition}[Ordem de Magnitude]
+    A ordem de magnitude de uma função é igual à ordem do seu termo que cresce mais rapidamente.
+\end{definition}
+
+\paragraph{Exemplo}
+    $$
+        f(n)=n+n^2+1
+    $$
+
+    A ordem de magnitude de $f(n)$ é $\mathbf{O(n^2)}$.
+
+\begin{remark}[Classes de complexidade comuns]\end{remark}
+    \begin{itemize}
+        \item Constante, $\mathbf{O(1)}$
+        \begin{itemize}
+            \item o número de instruções de um programa for executado um número limitado/constante de vezes            
+        \end{itemize}
+        \item Logarítmica, $\mathbf{O(\log(n))}$
+        \begin{itemize}
+            \item um problema é resolvido através da resolução de um conjunto de subproblemas
+        \end{itemize}
+        \item Polinomial, $\mathbf{O(n^p), p \geq 1}$
+        \begin{itemize}
+            \item Linear, $\mathbf{O(n)}$
+            \begin{itemize}
+                \item quando existe algum processamento para cada elemento de entrada
+            \end{itemize}
+            \item Pseudo-linear, $\mathbf{O(n\log(n))}$
+            \begin{itemize}
+                \item Quando um problema é resolvido através da resolução de um conjunto de subproblemas, e combinando posteriormente as suas soluções
+            \end{itemize}
+            \item Quadrática, $\mathbf{O(n^2)}$
+            \begin{itemize}
+                \item quando a dimensão da entrada duplica, o tempo aumenta 4x
+            \end{itemize}
+            \item Cúbica, $\mathbf{O(n^3)}$
+            \begin{itemize}
+                \item quando a dimensão de entrada duplica o tempo aumenta 8x
+            \end{itemize}
+        \end{itemize}
+        \item Exponencial, $\mathbf{O(p^n)}, n \geq 1$
+        \begin{itemize}
+            \item quando a dimensão de entrada duplica o tempo aumenta para o quadrado
+        \end{itemize}
+        \item Factorial, $\mathbf{O(n!)}$
+    \end{itemize}
+
+
+\begin{remark}[Garantias, previsões e limitações]
+    O tempo de execução dos algoritmos depende criticamente dos dados. O objeto da análise de complexidade é inferir o máximo de informação assumindo o mínimo possível.
+\end{remark}
+
+\begin{remark}[Estudo do pior caso]\end{remark}
+    O estudo do pior caso permite obter garantias máximas.
+    \begin{itemize}
+        \item se o resultado no pior caso é aceitável, então a situação é favorável;
+        \item se o resultado no pior caso for mau, pode ser problemático;
+    \end{itemize}
+
+
+\begin{remark}[Estudo do melhor caso]\end{remark}
+    Por vezes é relevante obter também limites inferiores. Esta análise pode dar indicações preciosas sobre como e onde melhorar o
+    desempenho de um algoritmo. Se os limites inferiores e superiores forem próximos, é conveniente tentar otimizar a implementação.
+    \begin{itemize}
+        \item se o resultado no pior caso é aceitável, então a situação é favorável;
+        \item se o resultado no pior caso for mau, pode ser problemático;
+    \end{itemize}
+
+
+\section{Algoritmos de Ordenação}
+
+\subsection{Insertion Sort}
+
+\begin{remark}[Caraterísticas]\end{remark}
+    Este algoritmo começa tratando  a primeiro entrada \texttt{A[0]} como um array já ordenado e, em seguida, verifica a segunda entrada \texttt{A[1]} e compara-a com
+a primeiro. Se eles estiverem na ordem errada, é efetuada a troca. Com isto, temos \texttt{A[0]} e \texttt{A[1]} ordenados.
+Em seguida, repete o processo para terceira entrada, posicionando-a no lugar certo, deixando \texttt{A[0]}, \texttt{A[1]} e \texttt{A[2]} ordenados. De forma mais geral, no início do $i$-ésimo ciclo, o insertion sort tem o
+entradas \texttt{A[0],...,\texttt{A[i-1]}} ordenadas e inserte \texttt{A[i]}, ordenando as entradas \texttt{A[0], ..., \texttt{A[i]}}.
+    \begin{itemize}
+        \item simples implementação;
+        \item requer uma quantidade constante de memória adicional;
+        \item útil para pequenas entradas;
+        \item muitas trocas e menos comparações.
+        \item \textbf{Best Case}: $O(n)$
+        \item \textbf{Average Case}: $O()\frac{n^2}{4})$
+        \item \textbf{Worst Case}: $O(n^2)$
+    \end{itemize}
+
+
+\begin{center}
+    \begin{lstlisting}[frame=single, language=c, caption=Algoritmo Insertion Sort, captionpos=b]
+        for ( i = 1 ; i < n ; i++ ) {
+            for( j = i ; j > 0 ; j-- )
+                if ( a[j] < a[j-1] )
+                    swap a[j] and a[j-1]
+                else break
+        }            
+    \end{lstlisting}
+
+    \begin{figure}[h]
+        \centering
+        \includegraphics[width=0.5\textwidth]{fig/ao/is.png}
+        \caption{Visualização do algoritmo Insertion Sort.}
+    \end{figure}
+\end{center}
+
+\subsection{Selection Sort}
+\begin{remark}[Caraterísticas]
+    Este algoritmo encontra o menor item o coloca-o em \texttt{A[0]}, trocando-o por qualquer item que já esteja nessa posição. De seguida, encontra o segundo menor item e troca-o pelo item em \texttt{A[1]}. Este processo é repetido até que todo o array esteja ordenado.
+    De modo mais geral, no $i$-ésimo ciclo, o Selection Sort encontra o $i$-ésimo item menor e troca-o com o item em $A[i-1]$.\end{remark}
+    \begin{itemize}
+        \item simples implementação;
+        \item requer uma quantidade constante de memória adicional;
+        \item útil para pequenas entradas;
+        \item \textbf{Best Case}: $O(n^2)$
+        \item \textbf{Average Case}: $O(n^2)$
+        \item \textbf{Worst Case}: $O(n^2)$
+    \end{itemize}
+
+
+\begin{center}
+    \begin{lstlisting}[frame=single, language=c, caption=Algoritmo Selection Sort, captionpos=b]
+        for ( i = 0 ; i < n-1 ; i++ ) {
+            k = i
+            for ( j = i+1 ; j < n ; j++ )
+                if ( a[j] < a[k] )
+                    k = j
+            swap a[i] and a[k]
+        }          
+    \end{lstlisting}
+    
+    \begin{figure}[h]
+        \centering
+        \includegraphics[width=0.5\textwidth]{fig/ao/ss.png}
+        \caption{Visualização do algoritmo Selection Sort.}
+    \end{figure}
+\end{center}
+
+\subsection{Bubble Sort}
+\begin{remark}[Caraterísticas]
+    Este algoritmo começa comparando \texttt{A[n-1]} com \texttt{A[n-2]} e troca-os se estiverem na ordem errada. Em seguida, compara \texttt{A[n-2]} e \texttt{A[n-3]} e troca-os, se necessário, e assim por diante. Quando atinge \texttt{A[0]}, a menor entrada estará no local correto. Em seguida, começa de trás novamente, comparando pares de "vizinhos" a partir de \texttt{A[1]}. De modo mais geral, no $i$-ésimo ciclo, o Bubble Sort compara os vizinhos desde trás, trocandoo-os quando necessário. O item com o índice mais baixo que é comprado com o seu vizinho da direita é \texttt{A[i-1]}. Após o $i$-ésimo ciclo, as entradas \texttt{A[0],...,A[i-1]} estão na sua posição final.\end{remark}
+    \begin{itemize}
+        \item simples implementação;
+        \item requer uma quantidade constante de memória adicional;
+        \item \textbf{Best Case}: $O(n)$
+        \item \textbf{Average Case}: $O(n^2)$
+        \item \textbf{Worst Case}: $O(n^2)$
+    \end{itemize}
+
+
+\begin{center}
+    \begin{lstlisting}[frame=single, language=c, caption=Algoritmo Bubble Sort, captionpos=b]
+        for ( i = 1 ; i < n ; i++ )
+            for ( j = n-1 ; j >= i ; j-- )
+                if ( a[j] < a[j-1] )
+                    swap a[j] and a[j-1]
+    \end{lstlisting}
+    
+    \begin{figure}[h!]
+        \centering
+        \includegraphics[width=0.5\textwidth]{fig/ao/bs.png}
+        \caption{Visualização do algoritmo Bubble Sort.}
+    \end{figure}
+\end{center}
+
+\subsection{Shell Sort}
+\begin{remark}[Caraterísticas]
+    Este algoritmo primeiro classifica os elementos distantes uns dos outros e reduz sucessivamente o intervalo entre os elementos a serem classificados. É uma versão generalizada do Insertion Sort. De modo geral, o algoritmo passa várias vezes pela lista dividindo o grupo maior em menores, onde é aplicado o Insertion Sort.\end{remark}
+    \begin{itemize}
+        \item \textbf{Best Case}: $O(n\log n)$
+        \item \textbf{Average Case}: $O(n\log n)$
+        \item \textbf{Worst Case}: $O(n^2)$
+    \end{itemize}
+
+
+\begin{center}
+    \begin{lstlisting}[frame=single, language=c, caption=Algoritmo Shell Sort, captionpos=b]
+for (int gap = n/2; gap > 0; gap /= 2)
+{
+    for (int i = gap; i < n; i += 1)
+    {
+        int temp = arr[i];
+        int j;            
+        for (j = i; j >= gap && arr[j - gap] > temp; j -= gap)
+            arr[j] = arr[j - gap];
+        arr[j] = temp;
+    }
+}
+    \end{lstlisting}
+    
+    \begin{figure}[h]
+        \centering
+        \includegraphics[width=0.8\textwidth]{fig/ao/shs.png}
+        \caption{Visualização do algoritmo Shell Sort.}
+    \end{figure}
+\end{center}
+
+\subsection{Merge Sort}
+\begin{remark}[Caraterísticas]
+    Este algoritmo utiliza a técnica divisão e conquista: a solução é encontrada à custa da mesma solução mas com argumentos estruturalmente mais simples.\end{remark}
+    \begin{itemize}[Funcionamento]
+        \item se o número de partes é $\leq$ 1, terminar;
+        \item dividir o vetor em 2 partes;
+        \item ordenar recursivamente as duas partes;
+        \item fundir as metades ordenadas;
+    \end{itemize}
+    \begin{itemize}
+        \item requer a utilização de um vetor adicional;
+        \item \textbf{Best Case}: $O(n\log n)$
+        \item \textbf{Average Case}: $O(n\log n)$
+        \item \textbf{Worst Case}: $O(n\log n)$
+    \end{itemize}
+
+
+\begin{center}
+    \begin{figure}[h]
+        \centering
+        \includegraphics[width=0.8\textwidth]{fig/ao/ms.png}
+        \caption{Visualização do algoritmo Merge Sort.}
+    \end{figure}
+\end{center}
+
+\subsection{Quick Sort}
+\begin{remark}[Caraterísticas]
+    Este algoritmo utiliza a técnica divisão e conquista: a solução é encontrada à custa da mesma solução mas com argumentos estruturalmente mais simples.\end{remark}
+    \begin{itemize}[Funcionamento]
+        \item se o número de partes é $\leq$ 1, terminar;
+        \item escolher um item arbitrário — \textbf{pivot} (e.g. o último ou o 1º);
+        \item rearranjar os restantes elementos em dois grupos:
+        \begin{itemize}
+            \item elementos com menor valor do que o pivot à esquerda do pivot;
+            \item elementos com maior valor do que o pivot à direita do pivot;
+        \end{itemize}
+        \item repetir processo anterior às listas esquerda e direita até chegar a listas com, no máximo, 1 elemento.
+    \end{itemize}
+    \begin{itemize}
+        \item requer a utilização de um vetor adicional;
+        \item \textbf{Best Case}: $O(n\log n)$
+        \item \textbf{Average Case}: $O(n\log n)$
+        \item \textbf{Worst Case}: $O(n^2)$
+    \end{itemize}
+\begin{center}
+    \begin{figure}[h]
+        \centering
+        \includegraphics[width=0.8\textwidth]{fig/ao/qs.png}
+        \caption{Visualização do algoritmo Quick Sort.}
+    \end{figure}
+\end{center}
+
+\subsection{Sumário}
+
+\begin{center}
+    \begin{figure}[h!]
+        \centering
+        \includegraphics[width=0.8\textwidth]{fig/ao/sumario.png}
+        \caption{Sumário de algoritmos de ordenação.}
+    \end{figure}
+\end{center}
+
+
+\section{Recursividade}
+
+\begin{definition}[Recursividade.]
+    A recursão é um método de resolver um problema em que a solução depende de soluções para instâncias menores do mesmo problema.
+\end{definition}
+
+\begin{remark}
+    Um programa recursivo não se pode chamar a si próprio infinitas vezes, caso contrário nunca pararia. Deste modo, é essencial existir uma \textbf{condição de paragem}.\end{remark}
+\begin{itemize}
+    \item apesar das vantagens das implementações recursivas, é relativamente fácil escrever funções recursivas que são extremamente ineficientes.
+    \item características básicas de um qualquer programa recursivo:
+    \begin{itemize}
+        \item chama-se a si próprio para valores menores do seu argumento;
+        \item possui uma condição de paragem em que calcula o resultado diretamente.
+    \end{itemize}
+\end{itemize}
+
+
+\begin{remark}[Divisão e Conquista.]\end{remark}
+    Este problemas consistem em:
+    \begin{itemize}
+        \item divisão em partes de tamanhos variáveis;
+        \item divisão em mais que duas partes;
+        \item divisão em partes que se sobrepõem;
+        \item realizar diversas quantidades de cálculos na componente não recursiva do algoritmo.
+    \end{itemize}
+
+    Geralmente, estes algoritmos realizam cálculos para:
+    \begin{itemize}
+        \item dividir a entrada em partes;
+        \item combinar os resultados obtidos em cada parte;
+        \item facilitar os cálculos entre as duas chamadas.
+    \end{itemize}
+
+\begin{remark}[Estratégias.]\end{remark}
+    \begin{itemize}
+        \item divisão e conquista:
+        \begin{itemize}
+            \item problema é partido em sub-problemas que se resolvem separadamente;
+            \item solução obtida por combinações das soluções;
+        \end{itemize}
+        \item Programação dinâmica:
+        \begin{itemize}
+            \item  resolvem-se os problemas de pequena dimensão e guardam-se as soluções;
+            \item solução de um problema é obtida combinando as de problemas de menor dimensão.
+        \end{itemize}
+    \end{itemize}
+
+
+\section{Árvores}
+
+\begin{definition}[Árvore.]
+    Uma árvore é um tipo de dados abstrato amplamente usado que simula uma estrutura de árvore hierárquica, com um valor raiz e subárvores de filhos com um nó pai, representados como um conjunto de nós vinculados.
+\end{definition}
+
+\begin{remark}[\emph{Nodes}]\end{remark}
+
+    \begin{itemize}
+        \item cada \emph{node} pode possuir um número variável de nós descendentes diretos;
+        \item \emph{nodes} com o mesmo ascendente direto designam-se por \emph{siblings};
+        \item um \emph{node} sem ascendente designa-se por \emph{root} (é único numa árvore).
+    \end{itemize}
+    \begin{center}
+        \begin{figure}[h]
+            \centering
+            \includegraphics[width=0.5\textwidth]{fig/t/tlevels.png}
+            \caption{Níveis de uma árvore.}
+        \end{figure}
+    \end{center}
+
+
+\begin{remark}[Terminologia]\end{remark}
+    \begin{itemize}
+        \item \textbf{caminho}: sequência de \emph{nodes} desde a \emph{root} até a uma \emph{leaf};
+        \begin{itemize}
+            \item a \textbf{dimensão} de um caminho corresponde ao seu número de nós.
+        \end{itemize}
+        \item a \textbf{altura}/\textbf{profundidade} de uma árvore é a maior dimensão do maior caminho (número de níveis).
+        \item \textbf{Grau} ou \textbf{aridade} de:
+        \begin{itemize}
+            \item um \emph{node}: número de \emph{children nodes};
+            \item uma árvore: maior grau dos seus \emph{nodes}.
+        \end{itemize}
+        \item \textbf{subárvore} de um \emph{node} é a árvore com \emph{root} nesse \emph{node};
+        \item \textbf{árvores degeneradas} são árvores de grau 1 (e.g. listas).
+    \end{itemize}
+
+
+\subsubsection{Árvores Binárias}
+\begin{itemize}
+    \item árvores de grau 2;
+    \begin{itemize}
+        \item cada \emph{node} pode ter até dois descendentes;
+        \item contêm duas subárvores (que podem ser vazias);
+        \begin{center}
+            \begin{figure}[h!]
+                \centering
+                \includegraphics[width=0.2\textwidth]{fig/t/tb.png}
+                \caption{Árvore binária.}
+            \end{figure}
+        \end{center}
+        \item é usual considerar a notação infixa: $\lt A_1;x;A_2\gt$ (esquerda; \emph{node}; direita);
+        \item \textbf{árvore estritamente binária}: todos os nós têm grau 0 ou 2;
+        \item \textbf{árvore binária equilibrada}: a diferença entre as alturas das subárvores não é superior a 1 e todas as subárvores são equilibradas;
+        \item uma árvore binária está \textbf{cheia} se:
+        \begin{itemize}
+            \item for vazia, ou;
+            \item as subárvores tiverem a mesma altura e estiverem cheias (se $d$ é a altura da árvore, então esta é formada por $2^d-1$ \emph{nodes});
+        \end{itemize}
+        \item uma árvore binária de altura $h$ está completa se estiver cheia até ao nível $h-1$ e todos os nós do último nível estão o mais à esquerda possível.
+        \begin{center}
+            \begin{figure}[h!]
+                \centering
+                \includegraphics[width=0.5\textwidth]{fig/t/btcompletefull.png}
+            \end{figure}
+        \end{center}
+    \end{itemize}
+\end{itemize}
+
+\begin{remark}[Pesquisa de um elemento]\end{remark}
+\begin{itemize}
+    \item realização de travessias em profundidade:
+    \begin{itemize}
+        \item prefixa;
+        \item infixa;
+        \item sufixa;
+    \end{itemize}
+    \item realização de travessias em largura.
+\end{itemize}
+
+\paragraph{Travessia Prefixa, \textbf{RLR}}
+\begin{enumerate}
+    \item visitar o \emph{root node};
+    \item travessia prefixa da subárvore esquerda;
+    \item travessia prefixa da subárvore direita;
+\end{enumerate}
+
+\paragraph{Travessia Infixa, \textbf{LRR}}
+\begin{enumerate}
+    \item travessia infixa da subárvore esquerda;
+    \item visitar o \emph{root node};
+    \item travessia infixa da subárvore direita;
+\end{enumerate}
+
+\paragraph{Travessia Sufixa, \textbf{LRR}}
+\begin{enumerate}
+    \item travessia sufixa da subárvore esquerda;
+    \item travessia sufixa da subárvore direita;
+    \item visitar o \emph{root node};
+\end{enumerate}
+
+\paragraph{Travessia em Largura}
+\begin{enumerate}
+    \item visitar o \emph{root node};
+    \item visitar os \emph{nodes} de cada nível, da esquerda para a direita;
+\end{enumerate}
+
+\subsubsection{Árvores de Pesquisa Binária}
+Numa árvore de pesquisa binária, os valores são inseridos após serem comparados com o valor raiz:
+\begin{itemize}
+    \item valores maiores à direita;
+    \item valores menores à esquerda;
+    \item utiliza-se a recursão para inserir novos valores;
+    \item a inserção é feita nos \emph{leaf nodes}.
+\end{itemize}
+
+\end{document}
