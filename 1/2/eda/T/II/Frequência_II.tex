@@ -1,5 +1,4 @@
 \documentclass[a4paper, 12pt]{article}
-\setcounter{secnumdepth}{0}
 \usepackage{amsmath}
 \usepackage{listings}
 \usepackage{pgfplots}
@@ -8,6 +7,7 @@
 \usepackage[utf8]{inputenc}
 \usepackage[portuguese]{babel}
 \usepackage{booktabs}
+\usepackage{float}
 
 \usepackage[margin=1in]{geometry}
 
@@ -19,8 +19,6 @@
     linkcolor=black,
     urlcolor=black
 }
-
-\pgfplotsset{compat=1.17}
 
 \newtheorem{definition}{Definição}[section]
 \newtheorem{remark}{Observação}
@@ -104,7 +102,9 @@ Existem formas de avaliar as exigências de um algoritmo:
     O tempo de execução geralmente dependente de um único parâmetro $N$: medida abstrata do tamanho do problema a considerar, usualmente relacionada com a quantidade de dados a processar.
 \end{remark}
 
-\subsubsection{Notação Assimptótica}
+\newpage
+
+\subsection{Notação Assimptótica}
 
 \begin{remark}
     A análise do tempo de execução de um algoritmo só é útil para valores de $N$ elevados. É utilizado o \textbf{pior-case} como valor para complexidade, pois:\end{remark}
@@ -186,6 +186,7 @@ Existem formas de avaliar as exigências de um algoritmo:
         \item se o resultado no pior caso for mau, pode ser problemático;
     \end{itemize}
 
+\newpage
 
 \section{Algoritmos de Ordenação}
 
@@ -209,15 +210,15 @@ entradas \texttt{A[0],...,\texttt{A[i-1]}} ordenadas e inserte \texttt{A[i]}, or
 
 \begin{center}
     \begin{lstlisting}[frame=single, language=c, caption=Algoritmo Insertion Sort, captionpos=b]
-        for ( i = 1 ; i < n ; i++ ) {
-            for( j = i ; j > 0 ; j-- )
-                if ( a[j] < a[j-1] )
-                    swap a[j] and a[j-1]
-                else break
-        }            
+for ( i = 1 ; i < n ; i++ ) {
+    for( j = i ; j > 0 ; j-- )
+        if ( a[j] < a[j-1] )
+            swap a[j] and a[j-1]
+        else break
+}            
     \end{lstlisting}
 
-    \begin{figure}[h]
+    \begin{figure}[H]
         \centering
         \includegraphics[width=0.5\textwidth]{fig/ao/is.png}
         \caption{Visualização do algoritmo Insertion Sort.}
@@ -240,16 +241,16 @@ entradas \texttt{A[0],...,\texttt{A[i-1]}} ordenadas e inserte \texttt{A[i]}, or
 
 \begin{center}
     \begin{lstlisting}[frame=single, language=c, caption=Algoritmo Selection Sort, captionpos=b]
-        for ( i = 0 ; i < n-1 ; i++ ) {
-            k = i
-            for ( j = i+1 ; j < n ; j++ )
-                if ( a[j] < a[k] )
-                    k = j
-            swap a[i] and a[k]
-        }          
+for ( i = 0 ; i < n-1 ; i++ ) {
+    k = i
+    for ( j = i+1 ; j < n ; j++ )
+        if ( a[j] < a[k] )
+            k = j
+    swap a[i] and a[k]
+}          
     \end{lstlisting}
     
-    \begin{figure}[h]
+    \begin{figure}[H]
         \centering
         \includegraphics[width=0.5\textwidth]{fig/ao/ss.png}
         \caption{Visualização do algoritmo Selection Sort.}
@@ -270,13 +271,13 @@ entradas \texttt{A[0],...,\texttt{A[i-1]}} ordenadas e inserte \texttt{A[i]}, or
 
 \begin{center}
     \begin{lstlisting}[frame=single, language=c, caption=Algoritmo Bubble Sort, captionpos=b]
-        for ( i = 1 ; i < n ; i++ )
-            for ( j = n-1 ; j >= i ; j-- )
-                if ( a[j] < a[j-1] )
-                    swap a[j] and a[j-1]
+for ( i = 1 ; i < n ; i++ )
+    for ( j = n-1 ; j >= i ; j-- )
+        if ( a[j] < a[j-1] )
+            swap a[j] and a[j-1]
     \end{lstlisting}
     
-    \begin{figure}[h!]
+    \begin{figure}[H]
         \centering
         \includegraphics[width=0.5\textwidth]{fig/ao/bs.png}
         \caption{Visualização do algoritmo Bubble Sort.}
@@ -308,7 +309,7 @@ for (int gap = n/2; gap > 0; gap /= 2)
 }
     \end{lstlisting}
     
-    \begin{figure}[h]
+    \begin{figure}[H]
         \centering
         \includegraphics[width=0.8\textwidth]{fig/ao/shs.png}
         \caption{Visualização do algoritmo Shell Sort.}
@@ -318,7 +319,7 @@ for (int gap = n/2; gap > 0; gap /= 2)
 \subsection{Merge Sort}
 \begin{remark}[Caraterísticas]
     Este algoritmo utiliza a técnica divisão e conquista: a solução é encontrada à custa da mesma solução mas com argumentos estruturalmente mais simples.\end{remark}
-    \begin{itemize}[Funcionamento]
+    \begin{itemize}
         \item se o número de partes é $\leq$ 1, terminar;
         \item dividir o vetor em 2 partes;
         \item ordenar recursivamente as duas partes;
@@ -333,7 +334,7 @@ for (int gap = n/2; gap > 0; gap /= 2)
 
 
 \begin{center}
-    \begin{figure}[h]
+    \begin{figure}[H]
         \centering
         \includegraphics[width=0.8\textwidth]{fig/ao/ms.png}
         \caption{Visualização do algoritmo Merge Sort.}
@@ -343,7 +344,7 @@ for (int gap = n/2; gap > 0; gap /= 2)
 \subsection{Quick Sort}
 \begin{remark}[Caraterísticas]
     Este algoritmo utiliza a técnica divisão e conquista: a solução é encontrada à custa da mesma solução mas com argumentos estruturalmente mais simples.\end{remark}
-    \begin{itemize}[Funcionamento]
+    \begin{itemize}
         \item se o número de partes é $\leq$ 1, terminar;
         \item escolher um item arbitrário — \textbf{pivot} (e.g. o último ou o 1º);
         \item rearranjar os restantes elementos em dois grupos:
@@ -360,7 +361,7 @@ for (int gap = n/2; gap > 0; gap /= 2)
         \item \textbf{Worst Case}: $O(n^2)$
     \end{itemize}
 \begin{center}
-    \begin{figure}[h]
+    \begin{figure}[H]
         \centering
         \includegraphics[width=0.8\textwidth]{fig/ao/qs.png}
         \caption{Visualização do algoritmo Quick Sort.}
@@ -370,13 +371,14 @@ for (int gap = n/2; gap > 0; gap /= 2)
 \subsection{Sumário}
 
 \begin{center}
-    \begin{figure}[h!]
+    \begin{figure}[H]
         \centering
         \includegraphics[width=0.8\textwidth]{fig/ao/sumario.png}
         \caption{Sumário de algoritmos de ordenação.}
     \end{figure}
 \end{center}
 
+\newpage
 
 \section{Recursividade}
 
@@ -426,6 +428,7 @@ for (int gap = n/2; gap > 0; gap /= 2)
         \end{itemize}
     \end{itemize}
 
+\newpage
 
 \section{Árvores}
 
@@ -441,7 +444,7 @@ for (int gap = n/2; gap > 0; gap /= 2)
         \item um \emph{node} sem ascendente designa-se por \emph{root} (é único numa árvore).
     \end{itemize}
     \begin{center}
-        \begin{figure}[h]
+        \begin{figure}[H]
             \centering
             \includegraphics[width=0.5\textwidth]{fig/t/tlevels.png}
             \caption{Níveis de uma árvore.}
@@ -466,20 +469,20 @@ for (int gap = n/2; gap > 0; gap /= 2)
     \end{itemize}
 
 
-\subsubsection{Árvores Binárias}
+\subsection{Árvores Binárias}
+\begin{center}
+    \begin{figure}[H]
+        \centering
+        \includegraphics[width=0.2\textwidth]{fig/t/tb.png}
+        \caption{Árvore binária.}
+    \end{figure}
+\end{center}
 \begin{itemize}
     \item árvores de grau 2;
     \begin{itemize}
         \item cada \emph{node} pode ter até dois descendentes;
         \item contêm duas subárvores (que podem ser vazias);
-        \begin{center}
-            \begin{figure}[h!]
-                \centering
-                \includegraphics[width=0.2\textwidth]{fig/t/tb.png}
-                \caption{Árvore binária.}
-            \end{figure}
-        \end{center}
-        \item é usual considerar a notação infixa: $\lt A_1;x;A_2\gt$ (esquerda; \emph{node}; direita);
+        \item é usual considerar a notação infixa: $<A_1;x;A_2>$ (esquerda; \emph{node}; direita);
         \item \textbf{árvore estritamente binária}: todos os nós têm grau 0 ou 2;
         \item \textbf{árvore binária equilibrada}: a diferença entre as alturas das subárvores não é superior a 1 e todas as subárvores são equilibradas;
         \item uma árvore binária está \textbf{cheia} se:
@@ -489,7 +492,7 @@ for (int gap = n/2; gap > 0; gap /= 2)
         \end{itemize}
         \item uma árvore binária de altura $h$ está completa se estiver cheia até ao nível $h-1$ e todos os nós do último nível estão o mais à esquerda possível.
         \begin{center}
-            \begin{figure}[h!]
+            \begin{figure}[H]
                 \centering
                 \includegraphics[width=0.5\textwidth]{fig/t/btcompletefull.png}
             \end{figure}
@@ -535,7 +538,7 @@ for (int gap = n/2; gap > 0; gap /= 2)
     \item visitar os \emph{nodes} de cada nível, da esquerda para a direita;
 \end{enumerate}
 
-\subsubsection{Árvores de Pesquisa Binária}
+\subsection{Árvores de Pesquisa Binária}
 Numa árvore de pesquisa binária, os valores são inseridos após serem comparados com o valor raiz:
 \begin{itemize}
     \item valores maiores à direita;
@@ -543,5 +546,28 @@ Numa árvore de pesquisa binária, os valores são inseridos após serem compara
     \item utiliza-se a recursão para inserir novos valores;
     \item a inserção é feita nos \emph{leaf nodes}.
 \end{itemize}
+
+\begin{remark}[Remoção de Elementos]
+    Existem dois métodos para a remoção de \emph{nodes}: por \textbf{fusão}; por \textbf{cópia}.
+\end{remark}
+
+\begin{remark}[Remoção por cópia.]
+\end{remark}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.6\textwidth]{fig/t/bstRemoveCopy.png}
+    \includegraphics[width=0.4\textwidth]{fig/t/bstRemoveCopy2.png}
+    \caption{Remoção de \emph{node} por cópia.}
+\end{figure}
+
+\begin{remark}[Remoção por fusão.]
+\end{remark}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.6\textwidth]{fig/t/bstRemoveFusion.png}
+    \includegraphics[width=0.4\textwidth]{fig/t/bstRemoveFusion2.png}
+    \caption{Remoção de \emph{node} por fusão.}
+\end{figure}
+
 
 \end{document}

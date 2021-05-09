@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.2) (preloaded format=pdflatex 2021.5.4)  9 MAY 2021 21:20
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.2) (preloaded format=pdflatex 2021.5.4)  9 MAY 2021 22:53
 entering extended mode
 **c:/Users/Carlos/Desktop/Universidade/ei/1/2/eda/T/II/Frequência_II.tex
 (c:/Users/Carlos/Desktop/Universidade/ei/1/2/eda/T/II/Frequência_II.tex
@@ -501,14 +501,21 @@ Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
 \@thisruleclass=\count316
 \@lastruleclass=\count317
 \@thisrulewidth=\dimen291
+) (F:\Software\MikTeX\tex/latex/float\float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count318
+\float@exts=\toks40
+\float@box=\box63
+\@float@everytoks=\toks41
+\@floatcapt=\box64
 ) (F:\Software\MikTeX\tex/latex/geometry\geometry.sty
 Package: geometry 2020/01/02 v5.9 Page Geometry
  (F:\Software\MikTeX\tex/generic/iftex\ifvtex.sty
 Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
 )
-\Gm@cnth=\count318
-\Gm@cntv=\count319
-\c@Gm@tempcnt=\count320
+\Gm@cnth=\count319
+\Gm@cntv=\count320
+\c@Gm@tempcnt=\count321
 \Gm@bindingoffset=\dimen292
 \Gm@wd@mp=\dimen293
 \Gm@odd@mp=\dimen294
@@ -517,58 +524,60 @@ Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
 \Gm@layoutheight=\dimen297
 \Gm@layouthoffset=\dimen298
 \Gm@layoutvoffset=\dimen299
-\Gm@dimlist=\toks40
+\Gm@dimlist=\toks42
  (F:\Software\MikTeX\tex/latex/geometry\geometry.cfg))
 Package hyperref Info: Option `colorlinks' set `true' on input line 21.
-\c@definition=\count321
-\c@remark=\count322
+\c@definition=\count322
+\c@remark=\count323
  (F:\Software\MikTeX\tex/latex/l3backend\l3backend-pdftex.def
 File: l3backend-pdftex.def 2021-02-18 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count323
-\l__pdf_internal_box=\box63
+\l__color_backend_stack_int=\count324
+\l__pdf_internal_box=\box65
 )
 No file Frequência_II.aux.
 \openout1 = `Frequência_II.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 34.
-LaTeX Font Info:    ... okay on input line 34.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 34.
-LaTeX Font Info:    ... okay on input line 34.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 34.
-LaTeX Font Info:    ... okay on input line 34.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 34.
-LaTeX Font Info:    ... okay on input line 34.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 34.
-LaTeX Font Info:    ... okay on input line 34.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 34.
-LaTeX Font Info:    ... okay on input line 34.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 34.
-LaTeX Font Info:    ... okay on input line 34.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 34.
-LaTeX Font Info:    ... okay on input line 34.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 34.
-LaTeX Font Info:    ... okay on input line 34.
-\c@lstlisting=\count324
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
+\c@lstlisting=\count325
 (F:\Software\MikTeX\tex/context/base/mkii\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count325
+\scratchcounter=\count326
 \scratchdimen=\dimen300
-\scratchbox=\box64
-\nofMPsegments=\count326
-\nofMParguments=\count327
-\everyMPshowfont=\toks41
-\MPscratchCnt=\count328
+\scratchbox=\box66
+\nofMPsegments=\count327
+\nofMParguments=\count328
+\everyMPshowfont=\toks43
+\MPscratchCnt=\count329
 \MPscratchDim=\dimen301
-\MPnumerator=\count329
-\makeMPintoPDFobject=\count330
-\everyMPtoPDFconversion=\toks42
+\MPnumerator=\count330
+\makeMPintoPDFobject=\count331
+\everyMPtoPDFconversion=\toks44
 ) (F:\Software\MikTeX\tex/latex/epstopdf-pkg\epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
 )
-Package pgfplots notification 'compat/show suggested version=true': document has been generated with the most recent feature set (\pgfplotsset{compat=1.17}).
 
-Package hyperref Info: Link coloring ON on input line 34.
+Package pgfplots Warning: running in backwards compatibility mode (unsuitable tick labels; missing features). Consider writing \pgfplotsset{compat=1.17} into your preamble.
+ on input line 32.
+
+Package hyperref Info: Link coloring ON on input line 32.
 (F:\Software\MikTeX\tex/latex/hyperref\nameref.sty
 Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
  (F:\Software\MikTeX\tex/latex/refcount\refcount.sty
@@ -576,11 +585,11 @@ Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
 ) (F:\Software\MikTeX\tex/generic/gettitlestring\gettitlestring.sty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
-\c@section@level=\count331
+\c@section@level=\count332
 )
-LaTeX Info: Redefining \ref on input line 34.
-LaTeX Info: Redefining \pageref on input line 34.
-LaTeX Info: Redefining \nameref on input line 34.
+LaTeX Info: Redefining \ref on input line 32.
+LaTeX Info: Redefining \pageref on input line 32.
+LaTeX Info: Redefining \nameref on input line 32.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -626,395 +635,151 @@ LaTeX Info: Redefining \nameref on input line 34.
 File: lstlang1.sty 2020/03/24 1.8d listings language file
 ) (F:\Software\MikTeX\tex/latex/listings\lstmisc.sty
 File: lstmisc.sty 2020/03/24 1.8d (Carsten Heinz)
-) [3] [4]
-LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 195.
+) [3] [4] [5]
+LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 196.
  (F:\Software\MikTeX\tex/latex/base\t1cmtt.fd
 File: t1cmtt.fd 2019/12/16 v2.5j Standard LaTeX font definitions
-) [5]
-<fig/ao/is.png, id=76, 695.59875pt x 856.19875pt>
+)
+<fig/ao/is.png, id=72, 695.59875pt x 856.19875pt>
 File: fig/ao/is.png Graphic file (type png)
 <use fig/ao/is.png>
-Package pdftex.def Info: fig/ao/is.png  used on input line 222.
+Package pdftex.def Info: fig/ao/is.png  used on input line 223.
 (pdftex.def)             Requested size: 226.48395pt x 278.77081pt.
- [6 <./fig/ao/is.png>]
-<fig/ao/ss.png, id=94, 606.265pt x 739.76375pt>
+ [6]
+<fig/ao/ss.png, id=89, 606.265pt x 739.76375pt>
 File: fig/ao/ss.png Graphic file (type png)
 <use fig/ao/ss.png>
-Package pdftex.def Info: fig/ao/ss.png  used on input line 254.
+Package pdftex.def Info: fig/ao/ss.png  used on input line 255.
 (pdftex.def)             Requested size: 226.48395pt x 276.36095pt.
-
-Overfull \hbox (14.31789pt too wide) in paragraph at lines 261--261
+ [7pdfTeX warning (ext4): destination with the same identifier (name{figure.1}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  
+l.258 \end{center}
+                   <./fig/ao/is.png>]
+Overfull \hbox (14.31789pt too wide) in paragraph at lines 262--262
 []\T1/cmr/m/it/12 Este al-go-ritmo co-me�a com-pa-rando \T1/cmtt/m/it/12 A[n-1] \T1/cmr/m/it/12 com \T1/cmtt/m/it/12 A[n-2]
  []
 
-[7 <./fig/ao/ss.png>]
-<fig/ao/bs.png, id=111, 261.1356pt x 239.9364pt>
+<fig/ao/bs.png, id=108, 261.1356pt x 239.9364pt>
 File: fig/ao/bs.png Graphic file (type png)
 <use fig/ao/bs.png>
-Package pdftex.def Info: fig/ao/bs.png  used on input line 281.
+Package pdftex.def Info: fig/ao/bs.png  used on input line 282.
 (pdftex.def)             Requested size: 226.48395pt x 208.10228pt.
- [8 <./fig/ao/bs.png>]
-<fig/ao/shs.png, id=130, 224.037pt x 126.2316pt>
+[8pdfTeX warning (ext4): destination with the same identifier (name{figure.2}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  
+l.285 \end{center}
+                   <./fig/ao/ss.png>]
+<fig/ao/shs.png, id=121, 224.037pt x 126.2316pt>
 File: fig/ao/shs.png Graphic file (type png)
 <use fig/ao/shs.png>
-Package pdftex.def Info: fig/ao/shs.png  used on input line 313.
+Package pdftex.def Info: fig/ao/shs.png  used on input line 314.
 (pdftex.def)             Requested size: 362.37569pt x 204.18008pt.
-
-
-c:/Users/Carlos/Desktop/Universidade/ei/1/2/eda/T/II/Frequência_II.tex:322: LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
+ [9pdfTeX warning (ext4): destination with the same identifier (name{figure.3}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   
-l.322         \item s
-                     e o número de partes é $\leq$ 1, terminar;
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-c:/Users/Carlos/Desktop/Universidade/ei/1/2/eda/T/II/Frequência_II.tex:322: LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.322         \item s
-                     e o número de partes é $\leq$ 1, terminar;
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-c:/Users/Carlos/Desktop/Universidade/ei/1/2/eda/T/II/Frequência_II.tex:322: LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.322         \item s
-                     e o número de partes é $\leq$ 1, terminar;
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-c:/Users/Carlos/Desktop/Universidade/ei/1/2/eda/T/II/Frequência_II.tex:323: LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.323         \item d
-                     ividir o vetor em 2 partes;
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-c:/Users/Carlos/Desktop/Universidade/ei/1/2/eda/T/II/Frequência_II.tex:323: LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.323         \item d
-                     ividir o vetor em 2 partes;
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-c:/Users/Carlos/Desktop/Universidade/ei/1/2/eda/T/II/Frequência_II.tex:323: LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.323         \item d
-                     ividir o vetor em 2 partes;
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-c:/Users/Carlos/Desktop/Universidade/ei/1/2/eda/T/II/Frequência_II.tex:324: LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.324         \item o
-                     rdenar recursivamente as duas partes;
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-c:/Users/Carlos/Desktop/Universidade/ei/1/2/eda/T/II/Frequência_II.tex:324: LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.324         \item o
-                     rdenar recursivamente as duas partes;
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-c:/Users/Carlos/Desktop/Universidade/ei/1/2/eda/T/II/Frequência_II.tex:324: LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.324         \item o
-                     rdenar recursivamente as duas partes;
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-c:/Users/Carlos/Desktop/Universidade/ei/1/2/eda/T/II/Frequência_II.tex:325: LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.325         \item f
-                     undir as metades ordenadas;
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-c:/Users/Carlos/Desktop/Universidade/ei/1/2/eda/T/II/Frequência_II.tex:325: LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.325         \item f
-                     undir as metades ordenadas;
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-c:/Users/Carlos/Desktop/Universidade/ei/1/2/eda/T/II/Frequência_II.tex:325: LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.325         \item f
-                     undir as metades ordenadas;
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-c:/Users/Carlos/Desktop/Universidade/ei/1/2/eda/T/II/Frequência_II.tex:326: LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.326     \end{itemize}
-                       
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-<fig/ao/ms.png, id=131, 620.3175pt x 597.23125pt>
+l.317 \end{center}
+                   <./fig/ao/bs.png>]
+<fig/ao/ms.png, id=142, 620.3175pt x 597.23125pt>
 File: fig/ao/ms.png Graphic file (type png)
 <use fig/ao/ms.png>
-Package pdftex.def Info: fig/ao/ms.png  used on input line 338.
+Package pdftex.def Info: fig/ao/ms.png  used on input line 339.
 (pdftex.def)             Requested size: 362.37569pt x 348.8822pt.
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-
-c:/Users/Carlos/Desktop/Universidade/ei/1/2/eda/T/II/Frequência_II.tex:347: LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
+ [10pdfTeX warning (ext4): destination with the same identifier (name{figure.4}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   
-l.347         \item s
-                     e o número de partes é $\leq$ 1, terminar;
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-c:/Users/Carlos/Desktop/Universidade/ei/1/2/eda/T/II/Frequência_II.tex:347: LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
+l.342 \end{center}
+                   <./fig/ao/shs.png>] [11pdfTeX warning (ext4): destination with the same identifier (name{figure.5}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   
-l.347         \item s
-                     e o número de partes é $\leq$ 1, terminar;
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-c:/Users/Carlos/Desktop/Universidade/ei/1/2/eda/T/II/Frequência_II.tex:347: LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.347         \item s
-                     e o número de partes é $\leq$ 1, terminar;
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-c:/Users/Carlos/Desktop/Universidade/ei/1/2/eda/T/II/Frequência_II.tex:348: LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.348         \item e
-                     scolher um item arbitrário — \textbf{pivot} (e.g. o ...
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-c:/Users/Carlos/Desktop/Universidade/ei/1/2/eda/T/II/Frequência_II.tex:348: LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.348         \item e
-                     scolher um item arbitrário — \textbf{pivot} (e.g. o ...
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-c:/Users/Carlos/Desktop/Universidade/ei/1/2/eda/T/II/Frequência_II.tex:348: LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.348         \item e
-                     scolher um item arbitrário — \textbf{pivot} (e.g. o ...
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-c:/Users/Carlos/Desktop/Universidade/ei/1/2/eda/T/II/Frequência_II.tex:349: LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.349         \item r
-                     earranjar os restantes elementos em dois grupos:
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-c:/Users/Carlos/Desktop/Universidade/ei/1/2/eda/T/II/Frequência_II.tex:349: LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.349         \item r
-                     earranjar os restantes elementos em dois grupos:
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-c:/Users/Carlos/Desktop/Universidade/ei/1/2/eda/T/II/Frequência_II.tex:349: LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.349         \item r
-                     earranjar os restantes elementos em dois grupos:
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-c:/Users/Carlos/Desktop/Universidade/ei/1/2/eda/T/II/Frequência_II.tex:351: LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.351             \item e
-                         lementos com menor valor do que o pivot à esquerda...
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-[9 <./fig/ao/shs.png>]
-<fig/ao/qs.png, id=147, 705.63625pt x 313.17pt>
+l.362     \end{itemize}
+                        <./fig/ao/ms.png>]
+<fig/ao/qs.png, id=159, 705.63625pt x 313.17pt>
 File: fig/ao/qs.png Graphic file (type png)
 <use fig/ao/qs.png>
-Package pdftex.def Info: fig/ao/qs.png  used on input line 365.
+Package pdftex.def Info: fig/ao/qs.png  used on input line 366.
 (pdftex.def)             Requested size: 362.37569pt x 160.82799pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-<fig/ao/sumario.png, id=148, 598.235pt x 474.77374pt>
+<fig/ao/sumario.png, id=160, 598.235pt x 474.77374pt>
 File: fig/ao/sumario.png Graphic file (type png)
 <use fig/ao/sumario.png>
-Package pdftex.def Info: fig/ao/sumario.png  used on input line 375.
+Package pdftex.def Info: fig/ao/sumario.png  used on input line 376.
 (pdftex.def)             Requested size: 362.37569pt x 287.59036pt.
-[10 <./fig/ao/ms.png>] [11 <./fig/ao/qs.png> <./fig/ao/sumario.png (PNG copy)>]
-<fig/t/tlevels.png, id=168, 344.28625pt x 147.55125pt>
+ [12pdfTeX warning (ext4): destination with the same identifier (name{figure.6}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  
+l.381 \newpage
+              pdfTeX warning (ext4): destination with the same identifier (name{figure.7}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  
+l.381 \newpage
+               <./fig/ao/qs.png> <./fig/ao/sumario.png (PNG copy)>] [13]
+<fig/t/tlevels.png, id=179, 344.28625pt x 147.55125pt>
 File: fig/t/tlevels.png Graphic file (type png)
 <use fig/t/tlevels.png>
-Package pdftex.def Info: fig/t/tlevels.png  used on input line 446.
+Package pdftex.def Info: fig/t/tlevels.png  used on input line 449.
 (pdftex.def)             Requested size: 226.48395pt x 97.0644pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[12]
-<fig/t/tb.png, id=178, 165.61874pt x 169.63374pt>
+<fig/t/tb.png, id=180, 165.61874pt x 169.63374pt>
 File: fig/t/tb.png Graphic file (type png)
 <use fig/t/tb.png>
-Package pdftex.def Info: fig/t/tb.png  used on input line 478.
+Package pdftex.def Info: fig/t/tb.png  used on input line 476.
 (pdftex.def)             Requested size: 90.5922pt x 92.78893pt.
-
-c:/Users/Carlos/Desktop/Universidade/ei/1/2/eda/T/II/Frequência_II.tex:482: Undefined control sequence.
-<recently read> \lt 
-                    
-l.482 ...usual considerar a notação infixa: $\lt
-                                                   A_1;x;A_2\gt$ (esquerda; ...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-c:/Users/Carlos/Desktop/Universidade/ei/1/2/eda/T/II/Frequência_II.tex:482: Undefined control sequence.
-l.482 ...rar a notação infixa: $\lt A_1;x;A_2\gt
-                                                  $ (esquerda; \emph{node}; ...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-[13 <./fig/t/tlevels.png> <./fig/t/tb.png>]
-<fig/t/btcompletefull.png, id=190, 1125.20375pt x 477.785pt>
+ [14pdfTeX warning (ext4): destination with the same identifier (name{figure.8}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  
+l.479 \end{center}
+                   <./fig/t/tlevels.png>]
+<fig/t/btcompletefull.png, id=191, 1125.20375pt x 477.785pt>
 File: fig/t/btcompletefull.png Graphic file (type png)
 <use fig/t/btcompletefull.png>
-Package pdftex.def Info: fig/t/btcompletefull.png  used on input line 494.
+Package pdftex.def Info: fig/t/btcompletefull.png  used on input line 497.
 (pdftex.def)             Requested size: 226.48395pt x 96.1677pt.
- [14 <./fig/t/btcompletefull.png>] [15] (Frequência_II.aux) ) 
+ [15pdfTeX warning (ext4): destination with the same identifier (name{figure.9}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  
+l.517     \item t
+                 ravessia prefixa da subárvore esquerda; <./fig/t/tb.png> <./fig/t/btcompletefull.png>]
+<fig/t/bstRemoveCopy.png, id=201, 711.65875pt x 338.26375pt>
+File: fig/t/bstRemoveCopy.png Graphic file (type png)
+<use fig/t/bstRemoveCopy.png>
+Package pdftex.def Info: fig/t/bstRemoveCopy.png  used on input line 558.
+(pdftex.def)             Requested size: 271.7835pt x 129.18158pt.
+<fig/t/bstRemoveCopy2.png, id=202, 556.0775pt x 341.275pt>
+File: fig/t/bstRemoveCopy2.png Graphic file (type png)
+<use fig/t/bstRemoveCopy2.png>
+Package pdftex.def Info: fig/t/bstRemoveCopy2.png  used on input line 559.
+(pdftex.def)             Requested size: 181.18439pt x 111.19426pt.
+ [16]
+<fig/t/bstRemoveFusion.png, id=225, 685.56125pt x 367.3725pt>
+File: fig/t/bstRemoveFusion.png Graphic file (type png)
+<use fig/t/bstRemoveFusion.png>
+Package pdftex.def Info: fig/t/bstRemoveFusion.png  used on input line 567.
+(pdftex.def)             Requested size: 271.7835pt x 145.64587pt.
+<fig/t/bstRemoveFusion2.png, id=226, 697.60625pt x 381.425pt>
+File: fig/t/bstRemoveFusion2.png Graphic file (type png)
+<use fig/t/bstRemoveFusion2.png>
+Package pdftex.def Info: fig/t/bstRemoveFusion2.png  used on input line 568.
+(pdftex.def)             Requested size: 181.18439pt x 99.06339pt.
+ [17pdfTeX warning (ext4): destination with the same identifier (name{figure.10}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  
+l.573 \end{document}
+                    pdfTeX warning (ext4): destination with the same identifier (name{figure.11}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  
+l.573 \end{document}
+                     <./fig/t/bstRemoveCopy.png> <./fig/t/bstRemoveCopy2.png> <./fig/t/bstRemoveFusion.png> <./fig/t/bstRemoveFusion2.png>] (Frequência_II.aux) ) 
 Here is how much of TeX's memory you used:
- 32223 strings out of 479334
- 722294 string characters out of 2869354
- 1322985 words of memory out of 3000000
- 49034 multiletter control sequences out of 15000+200000
+ 32310 strings out of 479334
+ 723736 string characters out of 2869354
+ 1320089 words of memory out of 3000000
+ 49106 multiletter control sequences out of 15000+200000
  416880 words of font info for 59 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 102i,10n,103p,816b,1932s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 102i,10n,103p,816b,1238s stack positions out of 5000i,500n,10000p,200000b,50000s
  <C:\Users\Carlos\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecit1200.pk> <C:\Users\Carlos\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ectt1200.pk> <C:\Users\Carlos\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbi1200.pk> <C:\Users\Carlos\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1440.pk> <C:\Users\Carlos\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1200.pk> <C:\Users\Carlos\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecti1200.pk> <C:\Users\Carlos\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1200.pk> <C:\Users\Carlos\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1728.pk> <C:\Users\Carlos\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1200.pk> <C:\Users\Carlos\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1440.pk> <C:\Users\Carlos\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1728.pk> <C:\Users\Carlos\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm2074.pk><F:/Software/MikTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><F:/Software/MikTeX/fonts/type1/public/amsfonts/cm/cmbx8.pfb><F:/Software/MikTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><F:/Software/MikTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><F:/Software/MikTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><F:/Software/MikTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><F:/Software/MikTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><F:/Software/MikTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on Frequência_II.pdf (15 pages, 857792 bytes).
+Output written on Frequência_II.pdf (17 pages, 984066 bytes).
 PDF statistics:
- 679 PDF objects out of 1000 (max. 8388607)
- 125 named destinations out of 1000 (max. 500000)
- 183 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 730 PDF objects out of 1000 (max. 8388607)
+ 132 named destinations out of 1000 (max. 500000)
+ 203 words of extra memory for PDF output out of 10000 (max. 10000000)
 
