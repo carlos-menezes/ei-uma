@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.2) (preloaded format=pdflatex 2021.5.4)  9 MAY 2021 22:53
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.2) (preloaded format=pdflatex 2021.5.4)  4 JUN 2021 21:59
 entering extended mode
 **c:/Users/Carlos/Desktop/Universidade/ei/1/2/eda/T/II/FrequÃªncia_II.tex
 (c:/Users/Carlos/Desktop/Universidade/ei/1/2/eda/T/II/FrequÃªncia_II.tex
@@ -631,155 +631,302 @@ LaTeX Info: Redefining \nameref on input line 32.
 \tf@toc=\write4
 \openout4 = `FrequÃªncia_II.toc'.
 
- [2] (F:\Software\MikTeX\tex/latex/listings\lstlang1.sty
+ [2] [3] [4] [5]
+LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 156.
+ (F:\Software\MikTeX\tex/latex/base\t1cmtt.fd
+File: t1cmtt.fd 2019/12/16 v2.5j Standard LaTeX font definitions
+) (F:\Software\MikTeX\tex/latex/listings\lstlang1.sty
 File: lstlang1.sty 2020/03/24 1.8d listings language file
 ) (F:\Software\MikTeX\tex/latex/listings\lstmisc.sty
 File: lstmisc.sty 2020/03/24 1.8d (Carsten Heinz)
-) [3] [4] [5]
-LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 196.
- (F:\Software\MikTeX\tex/latex/base\t1cmtt.fd
-File: t1cmtt.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 )
-<fig/ao/is.png, id=72, 695.59875pt x 856.19875pt>
+<fig/ao/is.png, id=58, 695.59875pt x 856.19875pt>
 File: fig/ao/is.png Graphic file (type png)
 <use fig/ao/is.png>
-Package pdftex.def Info: fig/ao/is.png  used on input line 223.
+Package pdftex.def Info: fig/ao/is.png  used on input line 183.
 (pdftex.def)             Requested size: 226.48395pt x 278.77081pt.
  [6]
-<fig/ao/ss.png, id=89, 606.265pt x 739.76375pt>
+<fig/ao/ss.png, id=77, 606.265pt x 739.76375pt>
 File: fig/ao/ss.png Graphic file (type png)
 <use fig/ao/ss.png>
-Package pdftex.def Info: fig/ao/ss.png  used on input line 255.
+Package pdftex.def Info: fig/ao/ss.png  used on input line 215.
 (pdftex.def)             Requested size: 226.48395pt x 276.36095pt.
  [7pdfTeX warning (ext4): destination with the same identifier (name{figure.1}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   
-l.258 \end{center}
+l.218 \end{center}
                    <./fig/ao/is.png>]
-Overfull \hbox (14.31789pt too wide) in paragraph at lines 262--262
+Overfull \hbox (14.31789pt too wide) in paragraph at lines 222--222
 []\T1/cmr/m/it/12 Este al-go-ritmo co-meça com-pa-rando \T1/cmtt/m/it/12 A[n-1] \T1/cmr/m/it/12 com \T1/cmtt/m/it/12 A[n-2]
  []
 
-<fig/ao/bs.png, id=108, 261.1356pt x 239.9364pt>
+<fig/ao/bs.png, id=96, 261.1356pt x 239.9364pt>
 File: fig/ao/bs.png Graphic file (type png)
 <use fig/ao/bs.png>
-Package pdftex.def Info: fig/ao/bs.png  used on input line 282.
+Package pdftex.def Info: fig/ao/bs.png  used on input line 242.
 (pdftex.def)             Requested size: 226.48395pt x 208.10228pt.
 [8pdfTeX warning (ext4): destination with the same identifier (name{figure.2}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   
-l.285 \end{center}
+l.245 \end{center}
                    <./fig/ao/ss.png>]
-<fig/ao/shs.png, id=121, 224.037pt x 126.2316pt>
+<fig/ao/shs.png, id=109, 224.037pt x 126.2316pt>
 File: fig/ao/shs.png Graphic file (type png)
 <use fig/ao/shs.png>
-Package pdftex.def Info: fig/ao/shs.png  used on input line 314.
+Package pdftex.def Info: fig/ao/shs.png  used on input line 274.
 (pdftex.def)             Requested size: 362.37569pt x 204.18008pt.
  [9pdfTeX warning (ext4): destination with the same identifier (name{figure.3}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   
-l.317 \end{center}
+l.277 \end{center}
                    <./fig/ao/bs.png>]
-<fig/ao/ms.png, id=142, 620.3175pt x 597.23125pt>
+<fig/ao/ms.png, id=130, 620.3175pt x 597.23125pt>
 File: fig/ao/ms.png Graphic file (type png)
 <use fig/ao/ms.png>
-Package pdftex.def Info: fig/ao/ms.png  used on input line 339.
+Package pdftex.def Info: fig/ao/ms.png  used on input line 299.
 (pdftex.def)             Requested size: 362.37569pt x 348.8822pt.
  [10pdfTeX warning (ext4): destination with the same identifier (name{figure.4}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   
-l.342 \end{center}
+l.302 \end{center}
                    <./fig/ao/shs.png>] [11pdfTeX warning (ext4): destination with the same identifier (name{figure.5}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   
-l.362     \end{itemize}
+l.322     \end{itemize}
                         <./fig/ao/ms.png>]
-<fig/ao/qs.png, id=159, 705.63625pt x 313.17pt>
+<fig/ao/qs.png, id=147, 705.63625pt x 313.17pt>
 File: fig/ao/qs.png Graphic file (type png)
 <use fig/ao/qs.png>
-Package pdftex.def Info: fig/ao/qs.png  used on input line 366.
+Package pdftex.def Info: fig/ao/qs.png  used on input line 326.
 (pdftex.def)             Requested size: 362.37569pt x 160.82799pt.
-<fig/ao/sumario.png, id=160, 598.235pt x 474.77374pt>
+<fig/ao/sumario.png, id=148, 598.235pt x 474.77374pt>
 File: fig/ao/sumario.png Graphic file (type png)
 <use fig/ao/sumario.png>
-Package pdftex.def Info: fig/ao/sumario.png  used on input line 376.
+Package pdftex.def Info: fig/ao/sumario.png  used on input line 336.
 (pdftex.def)             Requested size: 362.37569pt x 287.59036pt.
  [12pdfTeX warning (ext4): destination with the same identifier (name{figure.6}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   
-l.381 \newpage
+l.341 \newpage
               pdfTeX warning (ext4): destination with the same identifier (name{figure.7}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   
-l.381 \newpage
+l.341 \newpage
                <./fig/ao/qs.png> <./fig/ao/sumario.png (PNG copy)>] [13]
-<fig/t/tlevels.png, id=179, 344.28625pt x 147.55125pt>
+<fig/t/tlevels.png, id=167, 344.28625pt x 147.55125pt>
 File: fig/t/tlevels.png Graphic file (type png)
 <use fig/t/tlevels.png>
-Package pdftex.def Info: fig/t/tlevels.png  used on input line 449.
+Package pdftex.def Info: fig/t/tlevels.png  used on input line 409.
 (pdftex.def)             Requested size: 226.48395pt x 97.0644pt.
-<fig/t/tb.png, id=180, 165.61874pt x 169.63374pt>
+<fig/t/tb.png, id=168, 165.61874pt x 169.63374pt>
 File: fig/t/tb.png Graphic file (type png)
 <use fig/t/tb.png>
-Package pdftex.def Info: fig/t/tb.png  used on input line 476.
+Package pdftex.def Info: fig/t/tb.png  used on input line 436.
 (pdftex.def)             Requested size: 90.5922pt x 92.78893pt.
  [14pdfTeX warning (ext4): destination with the same identifier (name{figure.8}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   
-l.479 \end{center}
+l.439 \end{center}
                    <./fig/t/tlevels.png>]
-<fig/t/btcompletefull.png, id=191, 1125.20375pt x 477.785pt>
+<fig/t/btcompletefull.png, id=179, 1125.20375pt x 477.785pt>
 File: fig/t/btcompletefull.png Graphic file (type png)
 <use fig/t/btcompletefull.png>
-Package pdftex.def Info: fig/t/btcompletefull.png  used on input line 497.
+Package pdftex.def Info: fig/t/btcompletefull.png  used on input line 457.
 (pdftex.def)             Requested size: 226.48395pt x 96.1677pt.
  [15pdfTeX warning (ext4): destination with the same identifier (name{figure.9}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   
-l.517     \item t
+l.477     \item t
                  ravessia prefixa da subÃ¡rvore esquerda; <./fig/t/tb.png> <./fig/t/btcompletefull.png>]
-<fig/t/bstRemoveCopy.png, id=201, 711.65875pt x 338.26375pt>
+<fig/t/bstRemoveCopy.png, id=189, 711.65875pt x 338.26375pt>
 File: fig/t/bstRemoveCopy.png Graphic file (type png)
 <use fig/t/bstRemoveCopy.png>
-Package pdftex.def Info: fig/t/bstRemoveCopy.png  used on input line 558.
-(pdftex.def)             Requested size: 271.7835pt x 129.18158pt.
-<fig/t/bstRemoveCopy2.png, id=202, 556.0775pt x 341.275pt>
+Package pdftex.def Info: fig/t/bstRemoveCopy.png  used on input line 518.
+(pdftex.def)             Requested size: 362.37569pt x 172.23866pt.
+<fig/t/bstRemoveCopy2.png, id=190, 556.0775pt x 341.275pt>
 File: fig/t/bstRemoveCopy2.png Graphic file (type png)
 <use fig/t/bstRemoveCopy2.png>
-Package pdftex.def Info: fig/t/bstRemoveCopy2.png  used on input line 559.
-(pdftex.def)             Requested size: 181.18439pt x 111.19426pt.
+Package pdftex.def Info: fig/t/bstRemoveCopy2.png  used on input line 519.
+(pdftex.def)             Requested size: 362.37569pt x 222.39893pt.
  [16]
-<fig/t/bstRemoveFusion.png, id=225, 685.56125pt x 367.3725pt>
+<fig/t/bstRemoveFusion.png, id=213, 685.56125pt x 367.3725pt>
 File: fig/t/bstRemoveFusion.png Graphic file (type png)
 <use fig/t/bstRemoveFusion.png>
-Package pdftex.def Info: fig/t/bstRemoveFusion.png  used on input line 567.
-(pdftex.def)             Requested size: 271.7835pt x 145.64587pt.
-<fig/t/bstRemoveFusion2.png, id=226, 697.60625pt x 381.425pt>
+Package pdftex.def Info: fig/t/bstRemoveFusion.png  used on input line 527.
+(pdftex.def)             Requested size: 362.37569pt x 194.19077pt.
+<fig/t/bstRemoveFusion2.png, id=214, 697.60625pt x 381.425pt>
 File: fig/t/bstRemoveFusion2.png Graphic file (type png)
 <use fig/t/bstRemoveFusion2.png>
-Package pdftex.def Info: fig/t/bstRemoveFusion2.png  used on input line 568.
-(pdftex.def)             Requested size: 181.18439pt x 99.06339pt.
+Package pdftex.def Info: fig/t/bstRemoveFusion2.png  used on input line 528.
+(pdftex.def)             Requested size: 362.37569pt x 198.13261pt.
  [17pdfTeX warning (ext4): destination with the same identifier (name{figure.10}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   
-l.573 \end{document}
-                    pdfTeX warning (ext4): destination with the same identifier (name{figure.11}) has been already used, duplicate ignored
+l.531 
+       <./fig/t/bstRemoveCopy.png> <./fig/t/bstRemoveCopy2.png>]
+<fig/t/unbalanced_avl_trees.jpg, id=223, 501.875pt x 196.735pt>
+File: fig/t/unbalanced_avl_trees.jpg Graphic file (type jpg)
+<use fig/t/unbalanced_avl_trees.jpg>
+Package pdftex.def Info: fig/t/unbalanced_avl_trees.jpg  used on input line 539.
+(pdftex.def)             Requested size: 362.37569pt x 142.05733pt.
+ [18pdfTeX warning (ext4): destination with the same identifier (name{figure.11}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   
-l.573 \end{document}
-                     <./fig/t/bstRemoveCopy.png> <./fig/t/bstRemoveCopy2.png> <./fig/t/bstRemoveFusion.png> <./fig/t/bstRemoveFusion2.png>] (FrequÃªncia_II.aux) ) 
+l.542 
+       <./fig/t/bstRemoveFusion.png> <./fig/t/bstRemoveFusion2.png>]
+<fig/t/avl_left_rotation.jpg, id=232, 501.875pt x 185.69376pt>
+File: fig/t/avl_left_rotation.jpg Graphic file (type jpg)
+<use fig/t/avl_left_rotation.jpg>
+Package pdftex.def Info: fig/t/avl_left_rotation.jpg  used on input line 564.
+(pdftex.def)             Requested size: 226.48395pt x 83.79942pt.
+<fig/t/avl_right_rotation.jpg, id=233, 501.875pt x 181.67876pt>
+File: fig/t/avl_right_rotation.jpg Graphic file (type jpg)
+<use fig/t/avl_right_rotation.jpg>
+Package pdftex.def Info: fig/t/avl_right_rotation.jpg  used on input line 571.
+(pdftex.def)             Requested size: 226.48395pt x 81.98753pt.
+ [19pdfTeX warning (ext4): destination with the same identifier (name{figure.12}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  
+l.574 
+      pdfTeX warning (ext4): destination with the same identifier (name{figure.13}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  
+l.574 
+       <./fig/t/unbalanced_avl_trees.jpg> <./fig/t/avl_left_rotation.jpg>]
+<fig/t/right_subtree_of_left_subtree.jpg, id=245, 80.3pt x 150.5625pt>
+File: fig/t/right_subtree_of_left_subtree.jpg Graphic file (type jpg)
+<use fig/t/right_subtree_of_left_subtree.jpg>
+Package pdftex.def Info: fig/t/right_subtree_of_left_subtree.jpg  used on input line 578.
+(pdftex.def)             Requested size: 56.9055pt x 106.70024pt.
+<fig/t/subtree_left_rotation.jpg, id=246, 106.3975pt x 150.5625pt>
+File: fig/t/subtree_left_rotation.jpg Graphic file (type jpg)
+<use fig/t/subtree_left_rotation.jpg>
+Package pdftex.def Info: fig/t/subtree_left_rotation.jpg  used on input line 579.
+(pdftex.def)             Requested size: 56.9055pt x 80.5283pt.
+<fig/t/left_unbalanced_tree.jpg, id=247, 111.41624pt x 150.5625pt>
+File: fig/t/left_unbalanced_tree.jpg Graphic file (type jpg)
+<use fig/t/left_unbalanced_tree.jpg>
+Package pdftex.def Info: fig/t/left_unbalanced_tree.jpg  used on input line 580.
+(pdftex.def)             Requested size: 56.9055pt x 76.89842pt.
+<fig/t/right_rotation.jpg, id=248, 110.4125pt x 150.5625pt>
+File: fig/t/right_rotation.jpg Graphic file (type jpg)
+<use fig/t/right_rotation.jpg>
+Package pdftex.def Info: fig/t/right_rotation.jpg  used on input line 581.
+(pdftex.def)             Requested size: 56.9055pt x 77.59912pt.
+<fig/t/balanced_avl_tree.jpg, id=249, 131.49126pt x 110.4125pt>
+File: fig/t/balanced_avl_tree.jpg Graphic file (type jpg)
+<use fig/t/balanced_avl_tree.jpg>
+Package pdftex.def Info: fig/t/balanced_avl_tree.jpg  used on input line 582.
+(pdftex.def)             Requested size: 56.9055pt x 47.78307pt.
+<fig/t/left_subtree_of_right_subtree.jpg, id=250, 80.3pt x 170.6375pt>
+File: fig/t/left_subtree_of_right_subtree.jpg Graphic file (type jpg)
+<use fig/t/left_subtree_of_right_subtree.jpg>
+Package pdftex.def Info: fig/t/left_subtree_of_right_subtree.jpg  used on input line 589.
+(pdftex.def)             Requested size: 56.9055pt x 120.92694pt.
+<fig/t/subtree_right_rotation.jpg, id=251, 115.43124pt x 160.6pt>
+File: fig/t/subtree_right_rotation.jpg Graphic file (type jpg)
+<use fig/t/subtree_right_rotation.jpg>
+Package pdftex.def Info: fig/t/subtree_right_rotation.jpg  used on input line 590.
+(pdftex.def)             Requested size: 56.9055pt x 79.17253pt.
+<fig/t/right_unbalanced_tree.jpg, id=252, 117.43875pt x 160.6pt>
+File: fig/t/right_unbalanced_tree.jpg Graphic file (type jpg)
+<use fig/t/right_unbalanced_tree.jpg>
+Package pdftex.def Info: fig/t/right_unbalanced_tree.jpg  used on input line 591.
+(pdftex.def)             Requested size: 56.9055pt x 77.81982pt.
+<fig/t/left_rotation.jpg, id=253, 115.43124pt x 150.5625pt>
+File: fig/t/left_rotation.jpg Graphic file (type jpg)
+<use fig/t/left_rotation.jpg>
+Package pdftex.def Info: fig/t/left_rotation.jpg  used on input line 592.
+(pdftex.def)             Requested size: 56.9055pt x 74.22424pt.
+<fig/t/balanced_avl_tree (1).jpg, id=254, 131.49126pt x 110.4125pt>
+File: fig/t/balanced_avl_tree (1).jpg Graphic file (type jpg)
+<use fig/t/balanced_avl_tree (1).jpg>
+Package pdftex.def Info: fig/t/balanced_avl_tree (1).jpg  used on input line 593.
+(pdftex.def)             Requested size: 56.9055pt x 47.78307pt.
+ [20pdfTeX warning (ext4): destination with the same identifier (name{figure.14}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  
+l.597 \newpage
+              pdfTeX warning (ext4): destination with the same identifier (name{figure.15}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  
+l.597 \newpage
+              pdfTeX warning (ext4): destination with the same identifier (name{figure.16}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  
+l.597 \newpage
+               <./fig/t/avl_right_rotation.jpg> <./fig/t/right_subtree_of_left_subtree.jpg> <./fig/t/subtree_left_rotation.jpg> <./fig/t/left_unbalanced_tree.jpg> <./fig/t/right_rotation.jpg> <./fig/t/balanced_avl_tree.jpg> <./fig/t/left_subtree_of_right_subtree.jpg> <./fig/t/subtree_right_rotation.jpg> <./fig/t/right_unbalanced_tree.jpg> <./fig/t/left_rotation.jpg> <./fig/t/balanced_avl_tree (1).jpg>]
+<fig/heaps/MinHeapAndMaxHeap.png, id=264, 240.9pt x 144.2991pt>
+File: fig/heaps/MinHeapAndMaxHeap.png Graphic file (type png)
+<use fig/heaps/MinHeapAndMaxHeap.png>
+Package pdftex.def Info: fig/heaps/MinHeapAndMaxHeap.png  used on input line 612.
+(pdftex.def)             Requested size: 271.7835pt x 162.81387pt.
+
+Overfull \hbox (22.37425pt too wide) in paragraph at lines 631--632
+[]\T1/cmr/bx/n/12 Contrução de um max-heap\T1/cmr/m/n/12 : [][]$\T1/cmtt/m/n/12 https : / / www . tutorialspoint . com / data _ structures _
+ []
+
+[21pdfTeX warning (ext4): destination with the same identifier (name{figure.17}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  
+l.639         \item s
+                     e o valor do pai for inferior ao do filho, trocam (troc... <./fig/heaps/MinHeapAndMaxHeap.png>]
+Overfull \hbox (5.55893pt too wide) in paragraph at lines 643--644
+[]\T1/cmr/bx/n/12 Remoção num max-heap\T1/cmr/m/n/12 : [][]$\T1/cmtt/m/n/12 https : / / www . tutorialspoint . com / data _ structures _
+ []
+
+
+Overfull \hbox (17.70746pt too wide) in paragraph at lines 650--651
+[]\T1/cmr/m/n/12 depois do heap es-tar cri-ado, re-pe-ti-da-mente eli-mi-nar o ele-mento raiz do heap deslocando-
+ []
+
+[22]
+<fig/hash/hash_function.jpg, id=297, 451.6875pt x 124.96687pt>
+File: fig/hash/hash_function.jpg Graphic file (type jpg)
+<use fig/hash/hash_function.jpg>
+Package pdftex.def Info: fig/hash/hash_function.jpg  used on input line 663.
+(pdftex.def)             Requested size: 271.7835pt x 75.19807pt.
+<fig/hash/1_m8pm0demNgJnaeN7W9JWew.png, id=298, 411.5375pt x 364.36125pt>
+File: fig/hash/1_m8pm0demNgJnaeN7W9JWew.png Graphic file (type png)
+<use fig/hash/1_m8pm0demNgJnaeN7W9JWew.png>
+Package pdftex.def Info: fig/hash/1_m8pm0demNgJnaeN7W9JWew.png  used on input line 673.
+(pdftex.def)             Requested size: 271.7835pt x 240.62927pt.
+ [23pdfTeX warning (ext4): destination with the same identifier (name{figure.18}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  
+l.682 
+      pdfTeX warning (ext4): destination with the same identifier (name{figure.19}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  
+l.682 
+       <./fig/hash/hash_function.jpg> <./fig/hash/1_m8pm0demNgJnaeN7W9JWew.png (PNG copy)>]
+<fig/hash/Linear-Probing-1-1.jpg, id=310, 457.71pt x 343.2825pt>
+File: fig/hash/Linear-Probing-1-1.jpg Graphic file (type jpg)
+<use fig/hash/Linear-Probing-1-1.jpg>
+Package pdftex.def Info: fig/hash/Linear-Probing-1-1.jpg  used on input line 690.
+(pdftex.def)             Requested size: 271.7835pt x 203.84442pt.
+
+Overfull \hbox (6.18924pt too wide) in paragraph at lines 695--696
+[]\T1/cmr/m/it/12 Incrementar a equa-ção acima
+ []
+
+[24pdfTeX warning (ext4): destination with the same identifier (name{figure.20}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  
+l.701 \end{document}
+                     <./fig/hash/Linear-Probing-1-1.jpg>] (FrequÃªncia_II.aux) ) 
 Here is how much of TeX's memory you used:
- 32310 strings out of 479334
- 723736 string characters out of 2869354
- 1320089 words of memory out of 3000000
- 49106 multiletter control sequences out of 15000+200000
- 416880 words of font info for 59 fonts, out of 3000000 for 9000
+ 32468 strings out of 479334
+ 727517 string characters out of 2869354
+ 1315370 words of memory out of 3000000
+ 49203 multiletter control sequences out of 15000+200000
+ 419783 words of font info for 63 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 102i,10n,103p,816b,1238s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 102i,6n,103p,816b,1232s stack positions out of 5000i,500n,10000p,200000b,50000s
  <C:\Users\Carlos\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecit1200.pk> <C:\Users\Carlos\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ectt1200.pk> <C:\Users\Carlos\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbi1200.pk> <C:\Users\Carlos\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1440.pk> <C:\Users\Carlos\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1200.pk> <C:\Users\Carlos\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecti1200.pk> <C:\Users\Carlos\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1200.pk> <C:\Users\Carlos\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1728.pk> <C:\Users\Carlos\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1200.pk> <C:\Users\Carlos\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1440.pk> <C:\Users\Carlos\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1728.pk> <C:\Users\Carlos\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm2074.pk><F:/Software/MikTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><F:/Software/MikTeX/fonts/type1/public/amsfonts/cm/cmbx8.pfb><F:/Software/MikTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><F:/Software/MikTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><F:/Software/MikTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><F:/Software/MikTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><F:/Software/MikTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><F:/Software/MikTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on FrequÃªncia_II.pdf (17 pages, 984066 bytes).
+Output written on FrequÃªncia_II.pdf (24 pages, 1234443 bytes).
 PDF statistics:
- 730 PDF objects out of 1000 (max. 8388607)
- 132 named destinations out of 1000 (max. 500000)
- 203 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 903 PDF objects out of 1000 (max. 8388607)
+ 169 named destinations out of 1000 (max. 500000)
+ 368 words of extra memory for PDF output out of 10000 (max. 10000000)
 

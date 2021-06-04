@@ -1,9 +1,8 @@
 \babel@toc {portuguese}{}
 \contentsline {section}{\numberline {1}Análise de Algoritmos}{3}{section.1}%
-\contentsline {paragraph}{Exemplos}{3}{section*.2}%
 \contentsline {subsection}{\numberline {1.1}Crescimento}{3}{subsection.1.1}%
 \contentsline {subsection}{\numberline {1.2}Notação Assimptótica}{4}{subsection.1.2}%
-\contentsline {paragraph}{Exemplo}{4}{section*.3}%
+\contentsline {paragraph}{Exemplo}{4}{section*.2}%
 \contentsline {section}{\numberline {2}Algoritmos de Ordenação}{6}{section.2}%
 \contentsline {subsection}{\numberline {2.1}Insertion Sort}{6}{subsection.2.1}%
 \contentsline {subsection}{\numberline {2.2}Selection Sort}{7}{subsection.2.2}%
@@ -15,8 +14,18 @@
 \contentsline {section}{\numberline {3}Recursividade}{13}{section.3}%
 \contentsline {section}{\numberline {4}Árvores}{14}{section.4}%
 \contentsline {subsection}{\numberline {4.1}Árvores Binárias}{15}{subsection.4.1}%
-\contentsline {paragraph}{Travessia Prefixa, \textbf {RLR}}{16}{section*.4}%
-\contentsline {paragraph}{Travessia Infixa, \textbf {LRR}}{16}{section*.5}%
-\contentsline {paragraph}{Travessia Sufixa, \textbf {LRR}}{16}{section*.6}%
-\contentsline {paragraph}{Travessia em Largura}{16}{section*.7}%
+\contentsline {paragraph}{Travessia Prefixa, \textbf {RLR}}{16}{section*.3}%
+\contentsline {paragraph}{Travessia Infixa, \textbf {LRR}}{16}{section*.4}%
+\contentsline {paragraph}{Travessia Sufixa, \textbf {LRR}}{16}{section*.5}%
+\contentsline {paragraph}{Travessia em Largura}{16}{section*.6}%
 \contentsline {subsection}{\numberline {4.2}Árvores de Pesquisa Binária}{16}{subsection.4.2}%
+\contentsline {subsection}{\numberline {4.3}Árvores AVL}{18}{subsection.4.3}%
+\contentsline {subsubsection}{\numberline {4.3.1}Rotações}{19}{subsubsection.4.3.1}%
+\contentsline {section}{\numberline {5}Heap}{21}{section.5}%
+\contentsline {subsection}{\numberline {5.1}Max-Heap}{21}{subsection.5.1}%
+\contentsline {subsubsection}{\numberline {5.1.1}Inserção}{21}{subsubsection.5.1.1}%
+\contentsline {subsubsection}{\numberline {5.1.2}Remoção}{22}{subsubsection.5.1.2}%
+\contentsline {subsection}{\numberline {5.2}Heapsort}{22}{subsection.5.2}%
+\contentsline {section}{\numberline {6}Hash Tables}{23}{section.6}%
+\contentsline {subsection}{\numberline {6.1}Hashing}{23}{subsection.6.1}%
+\contentsline {subsubsection}{\numberline {6.1.1}Colisões}{23}{subsubsection.6.1.1}%

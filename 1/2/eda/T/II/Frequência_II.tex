@@ -56,46 +56,6 @@ Existem formas de avaliar as exigências de um algoritmo:
     \item Analiticamente: demonstrando a existência de uma função matemática que calcule as exigências do programa em relação aos parâmetros do problema.
 \end{itemize}
 
-\paragraph{Exemplos} 
-
-\begin{center}
-    \begin{lstlisting}[frame=single, language=c, caption=Algoritmo I, captionpos=b]
-        int soma = 0;
-        for ( int i = 1 ; i <= n ; i++ )
-            soma = soma + i;
-    \end{lstlisting}
-    
-    \begin{lstlisting}[frame=single, language=c, caption=Algoritmo II, captionpos=b]
-        int soma = 0;
-        for ( int i = 1 ; i <= n ; i++ )
-            for (int j = 1 ; j <= i ; j++ )
-                soma = soma + 1;
-    \end{lstlisting}
-    
-    \begin{lstlisting}[frame=single, language=c, caption=Algoritmo III, captionpos=b]
-        int soma = n * ( n + 1 ) / 2;
-    \end{lstlisting}
-    
-    \begin{table}[h]
-        \centering
-        \begin{tabular}{|l|l|l|l|}
-        \hline
-                    & Algoritmo I & Algoritmo II       & Algoritmo III \\
-        \hline
-        Atribuições    & n+2         & $3+n\frac{n}{2}$   & 1             \\
-        \hline
-        Adições        & 2n          & $n(\frac{2n}{2})$  & 1             \\
-        \hline
-        Multiplicações &             &                    & 1             \\
-        \hline
-        Divisões       &             &                    & 1             \\
-        \hline
-        Operações      & 3n+2        & $\frac{3n^2}{2}+3$ & 4            \\
-        \hline
-        \end{tabular}
-    \end{table}
-\end{center}
-
 \subsection{Crescimento}
 
 \begin{remark}
@@ -555,8 +515,8 @@ Numa árvore de pesquisa binária, os valores são inseridos após serem compara
 \end{remark}
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.6\textwidth]{fig/t/bstRemoveCopy.png}
-    \includegraphics[width=0.4\textwidth]{fig/t/bstRemoveCopy2.png}
+    \includegraphics[width=0.8\textwidth]{fig/t/bstRemoveCopy.png}
+    \includegraphics[width=0.8\textwidth]{fig/t/bstRemoveCopy2.png}
     \caption{Remoção de \emph{node} por cópia.}
 \end{figure}
 
@@ -564,10 +524,178 @@ Numa árvore de pesquisa binária, os valores são inseridos após serem compara
 \end{remark}
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.6\textwidth]{fig/t/bstRemoveFusion.png}
-    \includegraphics[width=0.4\textwidth]{fig/t/bstRemoveFusion2.png}
+    \includegraphics[width=0.8\textwidth]{fig/t/bstRemoveFusion.png}
+    \includegraphics[width=0.8\textwidth]{fig/t/bstRemoveFusion2.png}
     \caption{Remoção de \emph{node} por fusão.}
 \end{figure}
 
+\subsection{Árvores AVL}
+As árvores AVL são BSTs com equilíbrio de altura. A árvore AVL verifica a altura das subárvores esquerda e direita e garante que a diferença não seja maior do que 1. Essa diferença é chamada de \textbf{Fator de Balanceamento}, $FB$.
 
+A figura abaixo exemplifica uma árvore balanceada e duas não balanceadas:
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\textwidth]{fig/t/unbalanced_avl_trees.jpg}
+    \caption{Árvores (não) balanceadas.}
+\end{figure}
+
+Na segunda árvore, a subárvore esquerda de C tem altura 2 e a subárvore direita tem altura 0, então a diferença é 2. Na terceira árvore, a subárvore direita de A tem altura 2 e a esquerda está em falta, pelo que a sua altura é 0; a diferença é 2 novamente. A árvore AVL permite que a diferença (fator de equilíbrio) seja apenas 1.
+
+\begin{equation}
+    FB=altura(raiz\_esquerda)-altura(raiz\_direita)
+\end{equation}
+
+\subsubsection{Rotações}
+De modo a se equilibrar, uma árvore AVL pode realizar os seguintes quatro tipos de rotações:
+
+\begin{itemize}
+    \item Rotação à Esquerda (L)
+    \item Rotação à Direita (R)
+    \item Rotação Esquerda-Direita (LR)
+    \item Rotação Direita-Esquerda (RL)
+\end{itemize}
+
+As duas primeiras rotações são rotações simples e as duas rotações seguintes são rotações duplas.
+
+\begin{remark}[Rotação à Esquerda, L]\end{remark}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.5\textwidth]{fig/t/avl_left_rotation.jpg}
+    \caption{Rotação L.}
+\end{figure}
+
+\begin{remark}[Rotação à Direita, R]\end{remark}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.5\textwidth]{fig/t/avl_right_rotation.jpg}
+    \caption{Rotação R.}
+\end{figure}
+
+\begin{remark}[Rotação à Esquerda-Direita, LR]\end{remark}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=2cm]{fig/t/right_subtree_of_left_subtree.jpg}
+    \includegraphics[width=2cm]{fig/t/subtree_left_rotation.jpg}
+    \includegraphics[width=2cm]{fig/t/left_unbalanced_tree.jpg}
+    \includegraphics[width=2cm]{fig/t/right_rotation.jpg}
+    \includegraphics[width=2cm]{fig/t/balanced_avl_tree.jpg}
+    \caption{Rotação LR.}
+\end{figure}
+
+\begin{remark}[Rotação à Direita-Esquerda, RL]\end{remark}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=2cm]{fig/t/left_subtree_of_right_subtree.jpg}
+    \includegraphics[width=2cm]{fig/t/subtree_right_rotation.jpg}
+    \includegraphics[width=2cm]{fig/t/right_unbalanced_tree.jpg}
+    \includegraphics[width=2cm]{fig/t/left_rotation.jpg}
+    \includegraphics[width=2cm]{fig/t/balanced_avl_tree (1).jpg}
+    \caption{Rotação RL.}
+\end{figure}
+
+\newpage
+
+\section{Heap}
+
+Um Heap é um caso especial de estrutura de dados de árvore binária balanceada, em que a chave do \emph{root node} é comparada com seus filhos e organizada de acordo com o tipo de heap.
+
+Geralmente, as Heaps podem ser de dois tipos:
+
+\begin{enumerate}
+    \item \textbf{Max-Heap}: a chave presente no \emph{root} node deve ser a chave com maior valor entre os seus filhos. A mesma propriedade deve ser recursivamente verdadeira para todas as subárvores.
+    \item \textbf{Min-Heap}: a chave presente no \emph{root} node deve ser a chave com menor valor entre os seus filhos. A mesma propriedade deve ser recursivamente verdadeira para todas as subárvores.
+\end{enumerate}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.6\textwidth]{fig/heaps/MinHeapAndMaxHeap.png}
+    \caption{Tipos de \emph{heap}.}
+\end{figure}
+
+\begin{remark}[Representação vetorial.]
+    A representação vetorial de um \emph{heap} é feita colocando a ordem de visita dos seus elementos numa travessia em profundidade.
+\end{remark}
+
+\subsection{Max-Heap}
+\subsubsection{Inserção}
+\begin{enumerate}
+    \item criar um novo \emph{node} no fim do \emph{heap};
+    \item atribuir novo valor ao \emph{node};
+    \item comparar o valor deste \emph{node} filho com o seu pai;
+    \begin{enumerate}
+        \item se o valor do pai for inferior ao do filho, trocam (troca pelo maior);
+    \end{enumerate}
+\end{enumerate}
+
+\textbf{Contrução de um max-heap}: \url{https://www.tutorialspoint.com/data_structures_algorithms/images/max_heap_animation.gif}
+
+\subsubsection{Remoção}
+\begin{enumerate}
+    \item remover \emph{root node};
+    \item mover o último elemento do último nível para a raiz;
+    \item comparar o valor dos descendentes com este \emph{node};
+    \begin{enumerate}
+        \item se o valor do pai for inferior ao do filho, trocam (troca pelo maior);
+    \end{enumerate}
+\end{enumerate}
+
+\textbf{Remoção num max-heap}: \url{https://www.tutorialspoint.com/data_structures_algorithms/images/max_heap_deletion_animation.gif}
+
+\subsection{Heapsort}
+O algoritmo \emph{Heapsort} tem duas partes principais (que serão divididas mais adiante): construir um max-heap e, em seguida, ordená-lo. O max-heap é construído conforme descrito na seção acima. Em seguida, o \emph{Heapsort} produz um array ordenado removendo repetidamente o maior elemento do heap (que é a raiz do heap) e, em seguida, inserindo-o no array. O heap é atualizado após cada remoção. Depois de todos os elementos serem removidos do heap, o resultado é um array ordenada.
+
+\begin{enumerate}
+    \item construit um max-heap;
+    \item depois do heap estar criado, repetidamente eliminar o elemento raiz do heap deslocando-o para o final do array e, a seguir, armazenar a estrutura do heap com os elementos restantes.
+\end{enumerate}
+
+\textbf{Heapsort:} \url{https://www.interviewbit.com/tutorial/heap-sort-algorithm/} 
+
+\newpage
+
+\section{Hash Tables}
+Uma Hash Table é uma estrutura de dados que armazena dados de forma associativa. Numa tabela hash, os dados são armazenados num formato de array, em que cada valor de dados tem seu próprio valor de índice exclusivo. O acesso aos dados torna-se muito rápido se conhecermos o índice dos dados desejados. Assim, torna-se uma estrutura de dados em que as operações de inserção e busca são muito rápidas, independentemente do tamanho dos dados.
+
+\subsection{Hashing}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.6\textwidth]{fig/hash/hash_function.jpg}
+    \caption{Função de \emph{hash}.}
+\end{figure}
+
+\subsubsection{Colisões}
+\begin{remark}[Endereçamento Fechado]
+Elementos cuja chave devolve o mesmo valor de dispersão são armazenados numa lista.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.6\textwidth]{fig/hash/1_m8pm0demNgJnaeN7W9JWew.png}
+    \caption{Endereçamento fechado.}
+\end{figure}
+\end{remark}
+
+\begin{remark}[Endereçamento Aberto]
+No método de endereçamento aberto os registros em conflito são armazenados dentro da própria tabela de dispersão. A resolução das colisões é realizada através de buscas padronizadas dentro da própria tabela. A forma mais simples de fazer a busca é procurar linearmente na tabela até encontrar um registo vazio.
+    
+Neste caso, é necessária outra função que permita encontrar posições alternativas — \textbf{linear probing}:
+
+\begin{equation}
+    P=(1+P) \mod{table\_size}
+\end{equation}
+\end{remark}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.6\textwidth]{fig/hash/Linear-Probing-1-1.jpg}
+    \caption{\emph{Linear probing}.}
+\end{figure}
+
+\begin{remark}[Linear Probing c/ Double Hashing]
+Incrementar a equação acima com um valor que depende da chave.
+\end{remark}
+
+\begin{equation}
+    P=(P+INCREMENTO(CHAVE)) \mod table\_size
+\end{equation}
 \end{document}
