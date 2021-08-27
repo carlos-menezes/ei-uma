@@ -1,0 +1,69 @@
+\section{Lógica Proposicional}
+
+\begin{definition}
+    Um argumento é uma estrutura da forma:
+
+    \[
+    \begin{array}{ cc }
+        & \phi_1, \ldots, \phi_n \\
+        \cline{2-2}
+        & \psi
+    \end{array}
+    \]
+
+    onde n $\ge$ 1 e $\phi_1,\ldots{},\phi_n$ (\textbf{premissas}) e $\psi$ (\textbf{conclusão do argumento}) são proposições.
+    Um argumento da forma acima diz-se \textbf{válido} se e só se a conclusão $\psi$ for verdadeira sempre que as premissas $\phi_1,\ldots,\phi_n$ forem simultaneamente verdadeiras; diz-se um argumento \textbf{inválido} se e só se as premissas forem simultaneamente verdadeiras e a conclusão falsa.
+
+\end{definition}
+
+\subsection{As Linguagens do Cálculo Proposicional}
+O \textbf{alfabeto} da maior parte das linguagens proposicionais que serão consideradas é constituído por:
+
+\begin{itemize}
+    \item pelos símbolos $($ e $)$.
+    \item por um conjunto numerável de \textit{símbolos proposicionais} denotado por $\{ p_1,p_2, \ldots \}$.
+    \item pelo conetivo de negação $\neg$ (leia-se: `não`).
+    \item por um conjunto finito e não vazio de \textit{conetivos binários}: $\land$, $\lor$, $\implies$, $\iff$.
+\end{itemize}
+
+As fórmulas de uma linguagem proposicional $L$ são as expressões formadas usando os símbolos do alfabeto de $L$ de acordo com as seguintes regras:
+
+\begin{enumerate}[label=(\roman*)]
+    \item um símbolo proposicional é uma fórmula atómica.
+    \item se $\phi$ é uma fórmula, então ($\neg \phi$) também o é.
+    \item se $\phi$ e $\psi$ são fórmulas e $\circ$ é um dos símbolos de conetivos binários do alfabeto de L, então $(\phi\circ\psi)$ é uma fórmula.
+\end{enumerate}
+
+\begin{example}
+    Seja $L_{\neg,\land,\lor,\implies,\iff}$. Então:
+\end{example}
+
+\textbf{Exemplo de fórmulas de \textit{L}}: $p$, $(\neg r)$, $(\neg(\neg(\neg q)))$, $(p\land q)$\\
+
+\textbf{Exemplos de expressões que \underline{não} são fórmulas de \textit{L}}: $p\neg$, $p\land q$, $\implies (r \lor q)$\\
+
+\begin{definition}
+    Alguns parêntesis serão omitidos com base na convenção das seguinte precedências entre os operadores conetivos:
+
+    \begin{enumerate}
+        \item $\neg$
+        \item $\land$
+        \item $\lor$
+        \item $\iff$, $\implies$
+    \end{enumerate}
+\end{definition}
+
+Desta maneira, apresentam-se algumas abreviações:
+
+\begin{note}\end{note}
+\begin{itemize}
+    \item $p \land q$ é uma abreviação de $(p \land q)$
+    \item $p \implies \neg q$ é uma abreviação de $(p\implies(\neg q))$
+    \item $p\implies \neg q \lor r$ é uma abreviação de $(p\implieds((\neg q) \land r))$
+\end{itemize}
+
+\begin{enumerate}[label=\arabic*.]
+    \item \textbf{Literal}: fórmula que consiste apenas de um símbolos proposicional. \textbf{e.g.} $p_2, \neg p_2$.
+    \item $Form(L)$ representa todas as fórmulas de $L$, mas por abuso de notação usa-se $L$ com o mesmo significado de $Form(L)$.
+    \item Os símbolos que fazem parte do alfabeto de uma linguagem $L$ são \textbf{símbolos primitivos} da linguagem. A linguagem pode ser estendida com símbolos \textbf{não primitivos}.
+\end{enumerate}
