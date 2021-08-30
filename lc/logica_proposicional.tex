@@ -149,10 +149,31 @@ Seja $v$ uma valoração dos símbolos proposicionais e $FV_\circ$ as funções 
 
 Considerando uma valoração $v$ tal que $v(p_1)=1$ $v(p_2)=0$, o valor lógico da fórmula $p_1\land p_2 \to \negp_1$ pode ser calculado recorrendo às funções de verdade referidas acima:
 
-    \begin{align*}
-        v(p_1\land p_2 \to \negp_1)& =FV_{\to}(v(p_1\land p_2),v(\neg p_1)) \\
-        & =FV_{\to}(FV_\land(v(p_1), v(p_2)), FV_\neg(v(p_1)))\\
-        & =FV_{\to}(FV_\land(1,0),FV_\neg(1)) \\
-        & =FV_{\to}(0,0) \\
-        & =1
-    \end{align*}
+\begin{align*}
+    v(p_1\land p_2 \to \negp_1)& =FV_{\to}(v(p_1\land p_2),v(\neg p_1)) \\
+    & =FV_{\to}(FV_\land(v(p_1), v(p_2)), FV_\neg(v(p_1)))\\
+    & =FV_{\to}(FV_\land(1,0),FV_\neg(1)) \\
+    & =FV_{\to}(0,0) \\
+    & =1
+\end{align*}
+
+\begin{definition}
+    Noções semânticas relevantes:
+    \begin{enumerate}[label=(\alph*)]
+        \item Uma valoração $v$ satisfaz $\psi$ se $v(\psi)=1$ (representado por $v \models \psi$).
+        \item $\psi$ é possível/satisfazível se existe alguma valoração que satisfaz $\psi$.
+        \item $\psi$ é uma tautologia se toda a valorização satisfaz $\psi$ (representado por $\models \psi$).
+        \item $\psi$ é uma contradição se nenhuma valorização a satisfaz (i.e. $v(\psi)=0)$).
+    \end{enumerate}
+\end{definition}
+
+\begin{enumerate}[label=\arabic*.] \\
+    \item $v \not{\models} \psi$ significa que se tem $v(\psi)=0$.
+    \item $\not{\models} \psi$ significa que não se tem $\models \psi$. $\not{\models} \psi$ não implica que $\psi$ seja uma contradição.
+    \item $\top$ representa uma tautologia e $\bot$ uma contradição.
+\end{enumerate}
+
+\begin{definition}[label=(\alph*)]
+    \item Diz-se que $\psi$ \textbf{implica logicamente} $\phi$ se $\models psi \to \phi$ (i.e. se $\psi \to \phi$ é uma tautologia).
+    \item Diz-se que $\psi$ \textbf{é logicamente equivalente} a $\phi$ ($\psi \equiv \phi$) se $\models \psi \leftrightarrow \phi$ (i.e. se $\psi \leftrightarrow \phi$ é uma tautologia).
+\end{definition}
