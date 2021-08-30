@@ -23,7 +23,7 @@ O \textbf{alfabeto} da maior parte das linguagens proposicionais que serão cons
     \item pelos símbolos $($ e $)$.
     \item por um conjunto numerável de \textit{símbolos proposicionais} denotado por $\{ p_1,p_2, \ldots \}$.
     \item pelo conetivo de negação $\neg$ (leia-se: `não`).
-    \item por um conjunto finito e não vazio de \textit{conetivos binários}: $\land$, $\lor$, $\implies$, $\iff$.
+    \item por um conjunto finito e não vazio de \textit{conetivos binários}: $\land$, $\lor$, $\to$, $\leftrightarrow$.
 \end{itemize}
 
 As fórmulas de uma linguagem proposicional $L$ são as expressões formadas usando os símbolos do alfabeto de $L$ de acordo com as seguintes regras:
@@ -35,12 +35,12 @@ As fórmulas de uma linguagem proposicional $L$ são as expressões formadas usa
 \end{enumerate}
 
 \begin{example}
-    Seja $L_{\neg,\land,\lor,\implies,\iff}$. Então:
+    Seja $L_{\neg,\land,\lor,\to,\leftrightarrow}$. Então:
 \end{example}
 
 \textbf{Exemplo de fórmulas de \textit{L}}: $p$, $(\neg r)$, $(\neg(\neg(\neg q)))$, $(p\land q)$\\
 
-\textbf{Exemplos de expressões que \underline{não} são fórmulas de \textit{L}}: $p\neg$, $p\land q$, $\implies (r \lor q)$\\
+\textbf{Exemplos de expressões que \underline{não} são fórmulas de \textit{L}}: $p\neg$, $p\land q$, $\to (r \lor q)$\\
 
 \begin{definition}
     Alguns parêntesis serão omitidos com base na convenção das seguinte precedências entre os operadores conetivos:
@@ -49,7 +49,7 @@ As fórmulas de uma linguagem proposicional $L$ são as expressões formadas usa
         \item $\neg$
         \item $\land$
         \item $\lor$
-        \item $\iff$, $\implies$
+        \item $\leftrightarrow$, $\to$
     \end{enumerate}
 \end{definition}
 
@@ -58,8 +58,8 @@ Desta maneira, apresentam-se algumas abreviações:
 \begin{note}\end{note}
 \begin{itemize}
     \item $p \land q$ é uma abreviação de $(p \land q)$
-    \item $p \implies \neg q$ é uma abreviação de $(p\implies(\neg q))$
-    \item $p\implies \neg q \lor r$ é uma abreviação de $(p\implieds((\neg q) \land r))$
+    \item $p \to \neg q$ é uma abreviação de $(p\to(\neg q))$
+    \item $p \to \neg q \lor r$ é uma abreviação de $(p\to((\neg q) \land r))$
 \end{itemize}
 
 \begin{enumerate}[label=\arabic*.]
@@ -67,3 +67,92 @@ Desta maneira, apresentam-se algumas abreviações:
     \item $Form(L)$ representa todas as fórmulas de $L$, mas por abuso de notação usa-se $L$ com o mesmo significado de $Form(L)$.
     \item Os símbolos que fazem parte do alfabeto de uma linguagem $L$ são \textbf{símbolos primitivos} da linguagem. A linguagem pode ser estendida com símbolos \textbf{não primitivos}.
 \end{enumerate}
+
+\subsection{Uma aplicação do princípio de indução estrutural na lógica proposicional}
+
+Seja $L_{\neg,\circ_1,\ldots,\circ_n}$ uma linguagem proposicional com $n$ conetivos binários ($\circ_1,\ldots,\circ_n$). Para provar que toda a fórmula de $L$ satisfaz uma propriedade $Q$ (i.e. $\forall \psi \in L : Q(\psi)$), basta provar:
+
+\begin{itemize}
+    \item \textbf{Base:}
+    \begin{description}
+        \item Toda a fórmula satisfaz $Q$, i.e. $Q(\psi_i)$
+    \end{description}
+    \item \textbf{Passo de indução:}
+    \begin{enumerate}[label=(\roman*)]
+        \item \textbf{Seja $\psi$ arbitrário.} Se se verifica $Q(\psi)$, também se verifica $Q(\neg\psi)$.
+        \item \textbf{Seja $\circ_1$ um conetivo binário arbitrário ($i \in \{1,\ldots,n\}$).} Se se verifica $Q(\psi_1)$ e $Q(\psi_2)$, então verifica-se $Q(\psi_1 \circ_i \psi_2)$.
+    \end{enumerate}
+\end{itemize}
+
+\subsection{Semântica do Cálculo Proposicional}
+Se uma proposição é verdadeira, diz-se que tem o valor lógico $1$ (ou $V$ ou $T$); caso contrário, se é falsa, diz-se que tem o valor lógico $0$ (ou $F$).
+
+\begin{definition}
+    Uma valoração é uma aplicação
+
+    \[
+        v:\{p_1,p_2,\ldots\}\to\{0,1\}
+    \]
+
+    que indica o valor de verdade que um dado símbolo proposicional assume para a proposição que ele denota.
+\end{definition}
+
+A cada conetivo `$\circ$` do alfabeto de $L$, é associada uma função de verdade $FV_{\circ}:\{0,1\}^n\to\{0,1\}$, onde $n \in \mathbb{N}$ denota a aridade do conetivo $\circ$.
+
+As funções de verdade associadas aos conetivos $\neg$ e $\land$ definem-se como se segue:
+
+\begin{itemize}
+    \item $FV_\neg$ é a aplicação $FV_\neg:\{0,1\}\to\{0,1\}$ definida por $FV_\neg(0)=1$ e $FV_\neg(1)=0$ ou simplesmente pela função $FV_\neg(x)=1-x$.
+    \item $FV_\land$ é a aplicação $FV_\land:\{0,1\}^2\to\{0,1\}$ definida por \[
+        \begin{cases}
+            FV_\land(0,0)=0 \\
+            FV_\land(0,1)=0 \\
+            FV_\land(1,0)=0 \\
+            FV_\land(1,1)=1
+        \end{cases}\] ou simplesmente pela função $FV_\land(x,y)=x\times y$.
+\end{itemize}
+
+\begin{exercises}
+    Apresente a definição de cada uma das funções de verdade $FV_\lor$, $FV_\to$ e $FV_\leftrightarrow$ associadas aos conetivos $\lor$, $\to$ e $\leftrightarrow$, respetivamente.
+
+    \begin{itemize}
+        \item $FV_\lor$ é a aplicação $FV_\lor:\{0,1\}^2\to\{0,1\}$ definida por \[
+            \begin{cases}
+                FV_\land(0,0)=0 \\
+                FV_\land(0,1)=1 \\
+                FV_\land(1,0)=1 \\
+                FV_\land(1,1)=1
+            \end{cases}\] ou simplesmente pela função $FV_\lor(x,y)=max(x, y)$.
+        \item $FV_\to$ é a aplicação $FV_{\to}:\{0,1\}^2\to\{0,1\}$ definida por \[
+            \begin{cases}
+                FV_\land(0,0)=1 \\
+                FV_\land(0,1)=1 \\
+                FV_\land(1,0)=0 \\
+                FV_\land(1,1)=1
+            \end{cases}\].
+        \item $FV_\leftrightarrow$ é a aplicação $FV_{\leftrightarrow}:\{0,1\}^2\to\{0,1\}$ definida por \[
+            \begin{cases}
+                FV_\land(0,0)=1 \\
+                FV_\land(0,1)=0 \\
+                FV_\land(1,0)=0 \\
+                FV_\land(1,1)=1
+            \end{cases}\].
+    \end{itemize}
+\end{exercises}
+
+Seja $v$ uma valoração dos símbolos proposicionais e $FV_\circ$ as funções e verdade para cada conetivo $\circ$ do alfabeto de $L$. O valor de verdade das fórmulas não atómicas (de $L$) define-se recursivamente como se segue:
+
+\begin{enumerate}[label=(\roman*)]
+    \item $v(\neg\psi)=FV_\neg(v(\psi))$;
+    \item Se $\circ$ é um conetivo binário da linguagem $L$, $v(\psi_1 \circ \psi_2)=FV_\circ(v(\psi_1),v(\psi_2))$.
+\end{enumerate}
+
+Considerando uma valoração $v$ tal que $v(p_1)=1$ $v(p_2)=0$, o valor lógico da fórmula $p_1\land p_2 \to \negp_1$ pode ser calculado recorrendo às funções de verdade referidas acima:
+
+    \begin{align*}
+        v(p_1\land p_2 \to \negp_1)& =FV_{\to}(v(p_1\land p_2),v(\neg p_1)) \\
+        & =FV_{\to}(FV_\land(v(p_1), v(p_2)), FV_\neg(v(p_1)))\\
+        & =FV_{\to}(FV_\land(1,0),FV_\neg(1)) \\
+        & =FV_{\to}(0,0) \\
+        & =1
+    \end{align*}
