@@ -97,7 +97,7 @@ Se uma proposição é verdadeira, diz-se que tem o valor lógico $1$ (ou $V$ ou
     que indica o valor de verdade que um dado símbolo proposicional assume para a proposição que ele denota.
 \end{definition}
 
-A cada conetivo `$\circ$` do alfabeto de $L$, é associada uma função de verdade $FV_{\circ}:\{0,1\}^n\to\{0,1\}$, onde $n \in \mathbb{N}$ denota a aridade do conetivo $\circ$.
+A cada conetivo `$\circ$` do alfabeto de $L$, é associada uma função de verdade $FV_{\circ}:\{0,1\}^n\to\{0,1\}$, onde $n \ge 1$ denota a aridade do conetivo $\circ$.
 
 As funções de verdade associadas aos conetivos $\neg$ e $\land$ definem-se como se segue:
 
@@ -173,7 +173,161 @@ Considerando uma valoração $v$ tal que $v(p_1)=1$ $v(p_2)=0$, o valor lógico 
     \item $\top$ representa uma tautologia e $\bot$ uma contradição.
 \end{enumerate}
 
-\begin{definition}[label=(\alph*)]
-    \item Diz-se que $\psi$ \textbf{implica logicamente} $\phi$ se $\models psi \to \phi$ (i.e. se $\psi \to \phi$ é uma tautologia).
+\begin{enumerate}[label=(\alph*)]
+    \item Diz-se que $\psi$ \textbf{implica logicamente} $\phi$ se $\models \psi \to \phi$ (i.e. se $\psi \to \phi$ é uma tautologia).
     \item Diz-se que $\psi$ \textbf{é logicamente equivalente} a $\phi$ ($\psi \equiv \phi$) se $\models \psi \leftrightarrow \phi$ (i.e. se $\psi \leftrightarrow \phi$ é uma tautologia).
-\end{definition}
+\end{enumerate}
+
+Abaixo é apresentada uma lista de equivalências lógicas notáveis. Para quaisquer fórmulas $\psi$, $\phi$ e $\delta$, tem-se:
+
+\begin{align*}
+    &\psi \land \psi \equiv \psi  && \psi \lor \psi \equiv \psi    &\text{idempotencia} \\
+    &\psi \land \phi \equiv \phi \land \psi  &&   \psi \lor \phi \equiv \phi \lor \psi    &\text{comutatividade} \\
+    &(\phi \land \psi) \land \delta \equiv \phi \land (\psi \land \delta) && &\text{associatividade de } \land \\
+    &(\phi \lor \psi) \lor \delta \equiv \phi \lor (\psi \lor \delta) && &\text{associatividade de } \lor \\
+    &\psi \lor (\phi \land \delta) \equiv (\psi \lor \phi) \land (\psi \lor \delta) && & \text{distributividade de } \lor \text{ sobre } \land \\
+    &\psi \land (\phi \lor \delta) \equiv (\psi \land \phi) \lor (\psi \land \delta) && &\text{distributividade de } \land \text{ sobre } \lor \\
+    &\neg(\psi \land \phi) \equiv \neg\psi \lor \neg\phi && \neg(\psi \lor \phi) \equiv \neg\psi \land \neg\phi & \text{Leis de De Morgan} \\
+    &\top \land \psi \equiv \psi && \bot \lor \psi \equiv \psi & \text{Elemento neutro} \\
+    &\top \lor \psi \equiv \top && \bot \land \psi \equiv \bot & \text{Elemento absorvente} \\
+    &\neg\neg\psi \equiv \psi && &\text{Dupla negação} \\
+    &\psi \leftrightarrow \phi \equiv (\psi \to \phi) \land (\phi \to \psi) && &\text{Definição de } \leftrightarrow \text{ em termos de } \rightarrow \text{ e } \land
+\end{align*}
+
+\begin{exercises}
+    Mostre que se verificam de facto todas as equivalências lógicas apresentadas acima.
+\end{exercises}
+
+\begin{table}[H]
+    \centering
+    \begin{tabular}{|c|c|}
+        $\psi$ & $\psi \land \psi$ \\
+        \hline
+        0      & 0                 \\
+        1      & 1                
+    \end{tabular}
+\end{table}
+
+\begin{table}[H]
+    \centering
+    \begin{tabular}{|c|c|}
+        $\psi$ & $\psi \lor \psi$ \\
+        \hline
+        0      & 0                 \\
+        1      & 1                
+    \end{tabular}
+\end{table}
+    
+\begin{table}[H]
+    \centering
+    \begin{tabular}{|c|c|}
+        $\psi$ & $\psi \land \psi$ \\
+        \hline
+        0      & 0                 \\
+        1      & 1                
+    \end{tabular}
+\end{table}
+    
+\begin{table}[H]
+    \centering
+    \begin{tabular}{|c|c|c|c|}
+        $\phi$ & $\psi$ & $\psi \land \phi$ & $\phi \land \psi$ \\ \hline
+        0      & 0      & 0                 & 0                 \\
+        0      & 1      & 0                 & 0                 \\
+        1      & 0      & 0                 & 0                 \\
+        1      & 1      & 1                 & 1                
+    \end{tabular}
+\end{table}  
+    
+\begin{table}[H]
+    \centering
+    \begin{tabular}{|c|c|c|c|}
+        $\phi$ & $\psi$ & $\psi \lor \phi$ & $\phi \lor \psi$ \\ \hline
+        0      & 0      & 0                 & 0                 \\
+        0      & 1      & 1                 & 1                 \\
+        1      & 0      & 1                 & 1                 \\
+        1      & 1      & 1                 & 1                
+        \end{tabular}
+\end{table} 
+    
+\begin{table}[H]
+    \centering
+    \begin{tabular}{|c|c|c|c|c|c|c|c|}
+        \phi & \psi\ & \delta & \phi \land \delta & \psi \lor (\phi \land \delta) & (\psi \lor \phi) & (\psi \lor \delta) & (\psi \lor \phi) \land (\psi \lor \delta)\\ \hline
+        0 & 0 & 0 & 0 & \textbf{0} & 0 & 0 & \textbf{0}  \\
+        0 & 0 & 1 & 0 & \textbf{0} & 0 & 1 & \textbf{0}  \\
+        0 & 1 & 0 & 0 & \textbf{0} & 1 & 0 & \textbf{0}  \\
+        0 & 1 & 1 & 0 & \textbf{1} & 1 & 1 & \textbf{1}  \\
+        1 & 0 & 0 & 0 & \textbf{1} & 1 & 1 & \textbf{1}  \\
+        1 & 0 & 1 & 1 & \textbf{1} & 1 & 1 & \textbf{1}  \\
+        1 & 1 & 0 & 0 & \textbf{1} & 1 & 1 & \textbf{1}  \\
+        1 & 1 & 1 & 1 & \textbf{1} & 1 & 1 & \textbf{1} 
+    \end{tabular} 
+\end{table}
+        
+\begin{table}[H]
+    \centering
+    \begin{tabular}{|c|c|c|c|c|c|c|}
+        \psi & \phi & \psi \lor \phi & \neg(\psi \lor \phi) & \neg \psi & \neg \phi & \neg \psi \land \neg \phi \\ \hline
+        0 & 0 & 0 & \textbf{1} & 1 & 1 & \textbf{1} \\
+        0 & 1 & 1 & \textbf{0} & 1 & 0 & \textbf{0} \\
+        1 & 0 & 1 & \textbf{0} & 0 & 1 & \textbf{0} \\
+        1 & 1 & 1 & \textbf{0} & 0 & 0 & \textbf{0}
+    \end{tabular} 
+\end{table}
+
+\begin{table}[H]
+    \centering
+    \begin{tabular}{|c|c|c|}
+        \psi       & \top & \top \land \psi \\ \hline
+        \textbf{0} & 1    & \textbf{0}      \\
+        \textbf{1} & 1    & \textbf{1}     
+    \end{tabular} 
+\end{table}
+                
+\begin{table}[H]
+    \centering
+    \begin{tabular}{|c|c|c|}
+        \psi       & \bot & \bot \lor \psi \\ \hline
+        \textbf{0} & 0    & \textbf{0}      \\
+        \textbf{1} & 0   & \textbf{1}     
+    \end{tabular}  
+\end{table}
+
+\begin{table}[H]
+    \centering
+    \begin{tabular}{|c|c|c|}
+        \psi       & \top & \top \lor \psi \\ \hline
+        0 & \textbf{1}    & \textbf{1}      \\
+        1 & \textbf{1}   & \textbf{1}     
+    \end{tabular} 
+\end{table}
+
+\begin{table}[H]
+    \centering
+    \begin{tabular}{|c|c|c|}
+        \psi & \bot       & \bot \land \psi \\ \hline
+        0    & \textbf{0} & \textbf{0}      \\
+        1    & \textbf{0} & \textbf{0}     
+    \end{tabular}
+\end{table}
+
+\begin{table}[H]
+    \centering
+    \begin{tabular}{|c|c|c|}
+        \psi       & \neg \psi & \neg \neg \psi \\ \hline
+        \textbf{0} & 1         & \textbf{0}     \\
+        \textbf{1} & 0         & \textbf{1}    
+    \end{tabular}
+\end{table}
+
+\begin{table}[H]
+    \centering
+    \begin{tabular}{|c|c|c|c|c|c|}
+        \psi & \phi & \psi \leftrightarrow \phi & \psi \rightarrow \phi & \phi \rightarrow \psi &(\psi \rightarrow \phi) \land (\psi \rightarrow \phi) \\ \hline
+        0 & 0 & \textbf{1} & 1 & 1 & \textbf{1} \\
+        0 & 1 & \textbf{0} & 1 & 0 & \textbf{0} \\
+        1 & 0 & \textbf{0} & 0 & 1 & \textbf{0} \\
+        1 & 1 & \textbf{1} & 1 & 1 & \textbf{1}
+    \end{tabular}
+\end{table}
