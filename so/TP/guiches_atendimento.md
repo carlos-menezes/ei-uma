@@ -25,7 +25,7 @@ bool NovoCliente() {
 		abrir(g);
 		assinalar(servidor);
 		esperar(cliente);
-		return true;
+		return 1;
 	}
 }
 ```
