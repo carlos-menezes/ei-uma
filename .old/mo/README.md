@@ -1,1 +1,0 @@
-# Mecânica e Ondas
